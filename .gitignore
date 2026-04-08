@@ -1,0 +1,6 @@
+.vercel
+node_modules
+.vitepress/dist
+.vitepress/cache
+.env
+.env.local
