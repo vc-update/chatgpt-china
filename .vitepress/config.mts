@@ -24,14 +24,21 @@ export default defineConfig({
 
   head: [
     ['meta', { name: 'msvalidate.01', content: '283F4ED132291BB65C882E27214A15B8' }],
-    ['meta', { name: 'keywords', content: 'ChatGPT,ChatGPT中文版,ChatGPT官网,ChatGPT镜像网站,ChatGPT镜像站,GPT-5.4,ChatGPT国内使用,OpenAI,AI对话,人工智能,大语言模型' }],
+    ['meta', { name: 'keywords', content: 'ChatGPT,ChatGPT中文版,ChatGPT官网,ChatGPT镜像网站,ChatGPT镜像站,GPT-5.4,ChatGPT国内使用,OpenAI,AI对话,人工智能,大语言模型,ChatGPT注册,ChatGPT教程,GPT-5' }],
     ['meta', { name: 'author', content: 'ChatGPT中文版' }],
     ['meta', { name: 'robots', content: 'index,follow' }],
+    ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
     ['meta', { property: 'og:title', content: 'ChatGPT中文版 | ChatGPT官网入口 | ChatGPT镜像网站推荐【2026最新】' }],
     ['meta', { property: 'og:description', content: 'ChatGPT中文版官网入口，支持GPT-5.4等最新模型。国内可用ChatGPT镜像网站推荐，无需翻墙即可体验ChatGPT全部功能。' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:url', content: 'https://www.chatgpt-china.chat' }],
     ['meta', { property: 'og:image', content: 'https://www.chatgpt-china.chat/og-image.png' }],
+    ['meta', { property: 'og:locale', content: 'zh_CN' }],
+    ['meta', { property: 'og:site_name', content: 'ChatGPT中文版' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: 'ChatGPT中文版 | ChatGPT官网入口 | 2026最新使用指南' }],
+    ['meta', { name: 'twitter:description', content: 'ChatGPT中文版官网入口，支持GPT-5.4等最新模型。国内免翻墙使用ChatGPT完整教程。' }],
+    ['meta', { name: 'twitter:image', content: 'https://www.chatgpt-china.chat/og-image.png' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     ['link', { rel: 'canonical', href: 'https://www.chatgpt-china.chat' }],
     [
@@ -183,6 +190,7 @@ export default defineConfig({
           text: '🔥 核心聚焦',
           items: [
             { text: '专栏导读', link: '/chatgpt/' },
+            { text: 'ChatGPT中文版怎么用？2026年4月国内免翻墙终极指南（GPT-5.4+多模型对比）', link: '/chatgpt/chatgpt-zhongwen-ban-2026-zhinan-mianfei-guonei-shiyong' },
             { text: 'ChatGPT国内能用吗？2026年4月亲测5种方法（附最稳定方案推荐）', link: '/chatgpt/chatgpt-guonei-neng-yong-ma-5zhong-fangfa-2026' },
             { text: 'DeepSeek怎么用？DeepSeek V3国内免费使用教程与ChatGPT对比（2026年4月）', link: '/chatgpt/deepseek-v3-guonei-mianfei-jiaocheng-vs-chatgpt-2026' },
             { text: 'AI提示词大全2026：80个ChatGPT/Claude万能Prompt模板（工作学习全场景覆盖）', link: '/chatgpt/ai-tishici-daquan-chatgpt-claude-prompt-moban-2026' },
