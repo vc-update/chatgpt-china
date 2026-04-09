@@ -41,6 +41,7 @@ export default defineConfig({
     ['meta', { name: 'twitter:image', content: 'https://www.chatgpt-china.chat/og-image.png' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     ['link', { rel: 'canonical', href: 'https://www.chatgpt-china.chat' }],
+    ['link', { rel: 'stylesheet', href: '/styles/custom.css' }],
     [
       'script',
       { type: 'application/ld+json' },
