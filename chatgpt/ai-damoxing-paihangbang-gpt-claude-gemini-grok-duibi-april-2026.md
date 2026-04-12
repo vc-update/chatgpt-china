@@ -6,6 +6,7 @@ head:
     - name: keywords
       content: AI大模型排行榜2026,GPT-5.4评测,Claude 4.6评测,Gemini 3.1 Pro评测,Grok 4.2评测,AI模型对比,最强AI模型,ChatGPT对比,AI助手推荐
 outline: deep
+date: 2026-04-12
 ---
 
 # 2026年AI大模型排行榜：GPT-5.4、Claude 4.6、Gemini 3.1 Pro、Grok 4.2横向实测对比

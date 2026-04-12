@@ -3,6 +3,7 @@ title: ChatGPT官网打不开怎么办？国内访问方法与替代入口（202
 description: 2026最新 ChatGPT 中文版官网入口指南，详细介绍 ChatGPT 官网地址、国内使用方法、免费版与付费版区别以及新手快速上手教程。
 keywords: ChatGPT中文版官网入口,ChatGPT官网入口,ChatGPT中文版,ChatGPT国内使用,ChatGPT教程
 outline: deep
+date: 2026-04-12
 ---
 
 # ChatGPT官网打不开怎么办？国内访问方法与替代入口（2026最新）

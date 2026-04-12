@@ -6,6 +6,7 @@ head:
     - name: keywords
       content: ChatGPT官网入口,ChatGPT新手教程,ChatGPT保姆级指南,ChatGPT国内使用,ChatGPT注册教程,ChatGPT怎么用,GPT-5.4,ChatGPT中文版,国内免翻墙ChatGPT
 outline: deep
+date: 2026-04-12
 ---
 
 # ChatGPT官网入口：国内新手保姆级别使用指南

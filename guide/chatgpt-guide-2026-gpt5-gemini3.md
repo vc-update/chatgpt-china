@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: ChatGPT中文版, 2026最新ChatGPT, GPT-5.2使用教程, Gemini 3 Pro国内入口, ChatGPT镜像, chatgpt, gptcat
+date: 2026-04-12
 ---
 
 # 2026年最新 ChatGPT 中文版使用指南（支持 GPT 5.2，Gemini 3 Pro）

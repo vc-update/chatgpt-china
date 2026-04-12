@@ -11,6 +11,7 @@ head:
   - - meta
     - property: og:description
       content: 2026年4月最新ChatGPT中文版使用指南，GPT-5.4多模型对比，国内免翻墙3种方案，附Prompt模板
+date: 2026-04-12
 ---
 
 # ChatGPT中文版怎么用？2026年4月国内免翻墙终极指南

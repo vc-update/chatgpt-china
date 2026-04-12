@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: "GPT-5.2 Thinking, GPT-5.2 Pro, GPT-5.2国内镜像, SWE-bench Pro, GPT-5.2编程能力, gptcat, snakegpt"
+date: 2026-04-12
 ---
 
 # GPT-5.2 国内使用教程：无需魔法，一键直连 OpenAI 最新 Thinking 模型 (附镜像入口)

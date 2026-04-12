@@ -18,6 +18,7 @@ head:
   - - meta
     - property: article:modified_time
       content: 2026-03-18
+date: 2026-04-12
 ---
 
 # Claude 国内怎么用？2026年最新访问方法与中文使用指南

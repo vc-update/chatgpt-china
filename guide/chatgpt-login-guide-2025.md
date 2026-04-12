@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: chatgpt官网, chatgpt, chatgpt中文版, 免费chatgpt, deepseek, chatgpt镜像网站, chatgpt国内怎么玩
+date: 2026-04-12
 ---
 
 # 2025年 ChatGPT 官网中文版入口大全：国内免费使用与登录指南

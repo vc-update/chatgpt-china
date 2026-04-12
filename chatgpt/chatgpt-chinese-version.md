@@ -7,6 +7,7 @@ head:
       content: ChatGPT中文版,ChatGPT镜像,ChatGPT免费版,ChatGPT国内入口,GPT-5.2,SnakeGPT,GPTCat,国内直连
 lastUpdated: true
 outline: deep
+date: 2026-04-12
 ---
 
 # ChatGPT中文版：2025 最新国内镜像与免费使用指南 (支持 GPT-5.2/4o)

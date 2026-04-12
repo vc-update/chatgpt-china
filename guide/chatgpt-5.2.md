@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: GPT 5.2官网, ChatGPT中文版入口, 国内ChatGPT, GPT-5.2使用教程, gptcat, snakegpt, GPT-5.2免费
+date: 2026-04-12
 ---
 
 # GPT 5.2 已上线！国内可用 ChatGPT 官网中文版使用指南【2025年更新】

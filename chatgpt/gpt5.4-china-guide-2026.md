@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: GPT-5.4国内使用, GPT-5.4中文版, GPT5.4怎么用, ChatGPT国内访问, GPT-5.4无需翻墙, gpt5.4镜像, chatgpt5.4
+date: 2026-04-12
 ---
 
 # GPT-5.4 国内使用指南（2026 年最新）

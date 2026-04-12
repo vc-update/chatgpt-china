@@ -8,7 +8,7 @@ head:
   - - meta
     - name: fuke
       content: gpthomechat
-date: 2026-01-10
+date: 2026-04-12
 layout: doc
 ---
 

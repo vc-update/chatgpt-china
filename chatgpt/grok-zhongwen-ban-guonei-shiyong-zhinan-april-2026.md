@@ -6,6 +6,7 @@ head:
     - name: keywords
       content: Grok中文版,Grok怎么用,Grok 4.2,Grok国内使用,xAI,Grok官网,Grok镜像站,Grok免翻墙,ChatGPT替代,AI助手推荐2026
 outline: deep
+date: 2026-04-12
 ---
 
 # Grok中文版怎么用？国内免翻墙使用Grok 4.2完整教程（2026年4月最新）

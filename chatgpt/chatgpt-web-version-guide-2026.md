@@ -1,7 +1,7 @@
 ---
 title: ChatGPT 网页版怎么用？2026年国内直连教程（无需翻墙）
 shortTitle: ChatGPT网页版使用指南
-date: 2026-03-19
+date: 2026-04-12
 author: ChatGPT-China-Guide
 description: 2026最新 ChatGPT 网页版使用指南，介绍官方网页版入口、国内直连方案、中文版平台推荐，帮助国内用户无需翻墙即可体验 GPT-5.4 全功能。
 head:

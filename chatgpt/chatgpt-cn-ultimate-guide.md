@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: ChatGPT中文版推荐, SnakeGPT, GPTCat, GPT-5.2镜像, Midjourney中文版, AI生成PPT, Claude 4.5
+date: 2026-04-12
 ---
 
 # 2026 最新 ChatGPT 中文版使用指南：国内直连 GPT-5.2 & Gemini 3 pro

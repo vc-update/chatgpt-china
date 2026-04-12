@@ -11,6 +11,7 @@ head:
   - - meta
     - property: og:description
       content: 从推理、代码、长上下文、多模态到智能体工作流，全面比较 GPT-5.4 Thinking 与 Gemini 3.1 Pro。
+date: 2026-04-12
 ---
 
 # GPT-5.4 Thinking vs Gemini 3.1 Pro：2026 年两大高阶推理模型怎么选？

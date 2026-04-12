@@ -6,6 +6,7 @@ head:
     - name: keywords
       content: ChatGPT中文版,ChatGPT官网入口,GPT-5.4,ChatGPT国内使用,ChatGPT免翻墙,ChatGPT镜像,国内用ChatGPT,ChatGPT教程2026,ChatGPT怎么用,GPTCat,SnakeGPT,ChatGPT中文版2026
 outline: deep
+date: 2026-04-12
 ---
 
 # ChatGPT中文版官网入口｜GPT-5.4国内免翻墙使用完整教程（2026年3月最新）

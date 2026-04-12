@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: Grok,Grok 中文版,Grok 官网,Grok 注册,Grok 登录,Grok 使用指南,Grok 提示词,Grok 教程,Grok vs ChatGPT,Grok 镜像
+date: 2026-04-12
 ---
 
 # Grok 官网中文版使用指南【2026年1月持续更新】

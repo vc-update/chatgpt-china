@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: ChatGPT中文版, GPT-5.2使用教程, Gemini 3 Pro国内, Grok 4.1镜像, ChatGPT, GPT-4o, ChatGPT镜像网站, ChatGPT官网, 
+date: 2026-04-12
 ---
 
 # ChatGPT 中文版：国内访问指南（支持 GPT-5.2、GPT-4o、GPT-4，Gemini 3 pro，grok4.1 无需翻墙）【2025持续更新】

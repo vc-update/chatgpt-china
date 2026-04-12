@@ -3,6 +3,7 @@ title: ChatGPT中文版：国内访问指南（支持GPT、Gemini、Claude、gro
 description: 2026年最新！国内无需翻墙使用ChatGPT中文版完整指南，同时支持GPT-5.4、Gemini 3.1 Pro、Claude 4.6、Grok 4.2等顶级AI模型，附国内直连平台推荐与使用技巧。
 keywords: ChatGPT中文版, ChatGPT国内访问, ChatGPT无需翻墙, ChatGPT官网入口, GPT-5.4, Claude 4.6, Gemini, Grok, AI国内使用
 outline: deep
+date: 2026-04-12
 ---
 
 # ChatGPT中文版：国内访问指南（支持GPT、Gemini、Claude、Grok等模型，无需翻墙）

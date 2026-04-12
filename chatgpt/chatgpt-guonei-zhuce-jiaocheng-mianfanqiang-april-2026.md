@@ -6,6 +6,7 @@ head:
     - name: keywords
       content: ChatGPT注册教程,ChatGPT怎么注册,ChatGPT国内注册,ChatGPT免翻墙注册,ChatGPT中文版注册,ChatGPT账号,GPT-5.4注册,AI注册教程2026
 outline: deep
+date: 2026-04-12
 ---
 
 # ChatGPT国内怎么注册？2026年最新注册使用全流程图文教程（无需翻墙手机号）

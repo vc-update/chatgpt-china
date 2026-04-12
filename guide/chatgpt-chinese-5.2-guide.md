@@ -1,7 +1,7 @@
 ---
 title: 2025最新ChatGPT官网中文入口：国内GPT5.2使用教程
 description: 2025年ChatGPT官网怎么进？本文提供最新ChatGPT官网入口，深度评测SnakeGPT和GPTCat两个支持GPT5.2的ChatGPT镜像网站。内含国内注册教程、账号防封指南以及独家AI提问公式，教你免费体验ChatGPT中文版。
-date: 2025-12-21
+date: 2026-04-12
 tags: 
   - ChatGPT
   - ChatGPT官网

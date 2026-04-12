@@ -2,6 +2,7 @@
 title: ChatGPT官网入口：国内最新ChatGPT中文版使用指南
 description: 2026年最新整理：ChatGPT 官网入口在国内如何稳定打开？如何选择更适合中文使用的“官网体验”和“全模型聚合平台”？一篇讲清楚。
 keywords: [ChatGPT官网入口, ChatGPT中文版, ChatGPT国内使用, SnakeGPT, GPTCat, GPT猫, ChatGPT镜像, AI工具导航]
+date: 2026-04-12
 ---
 
 # ChatGPT官网入口：国内最新ChatGPT中文版使用指南

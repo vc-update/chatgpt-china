@@ -1,7 +1,7 @@
 ---
 title: ChatGPT中文版：一分钟教会你国内如何使用ChatGPT 5.2 
 description: ChatGPT 中文版是 OpenAI 开发的 ChatGPT 模型的中文优化版本，专为中文用户，提供更流畅、更精准的智能对话。2025年最新ChatGPT国内使用教程。揭秘如何无需翻墙直连ChatGPT 5.2官网体验。实测SnakeGPT与GPTCat，完美支持Sora视频生成与DeepSeek R1，附免费注册与防封号指南。
-date: 2025-12-22
+date: 2026-04-12
 tags: 
   - ChatGPT中文版
   - ChatGPT 5.2

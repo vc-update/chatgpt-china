@@ -6,6 +6,7 @@ head:
     - name: keywords
       content: GPT-5.4怎么用,GPT-5.4 Thinking,GPT-5.4国内使用,GPT-5.4免翻墙,GPT-5.4中文,ChatGPT GPT-5.4,GPT-5.4教程,SnakeGPT,GPTCat
 outline: deep
+date: 2026-04-12
 ---
 
 # GPT-5.4怎么用？国内免翻墙使用GPT-5.4 Thinking的完整教程（2026年4月）

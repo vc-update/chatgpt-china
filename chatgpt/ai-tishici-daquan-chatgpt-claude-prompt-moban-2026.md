@@ -6,6 +6,7 @@ head:
     - name: keywords
       content: AI提示词,ChatGPT提示词,Prompt模板,ChatGPT Prompt,Claude提示词,AI提示词大全,GPT提示词技巧,AI指令大全,ChatGPT指令,提示词工程2026
 outline: deep
+date: 2026-04-12
 ---
 
 # AI提示词大全2026：80个ChatGPT/Claude万能Prompt模板

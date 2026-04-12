@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: ChatGPT论文润色, 论文降重指令, AI写论文, Claude 4.5写作, 毕业论文神器
+date: 2026-04-12
 ---
 
 # 大学生狂喜！用 ChatGPT 润色论文的 5 个神级指令（降重/扩写/查文献）

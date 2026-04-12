@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: ChatGPT中文版入口, GPT5.2直连, ChatGPT镜像网站, 国内使用ChatGPT, snakegpt, gptcat, 2025最新ChatGPT
+date: 2026-04-12
 ---
 
 # ChatGPT中文版国内入口：2025年最新GPT5.2直连镜像网站

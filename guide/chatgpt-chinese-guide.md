@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: ChatGPT中文版, ChatGPT镜像, ChatGPT国内入口, GPT-5.2, GPT-5, 免费ChatGPT, 怎么使用ChatGPT
+date: 2026-04-12
 ---
 
 # ChatGPT中文版使用指南（2025年12月更新）

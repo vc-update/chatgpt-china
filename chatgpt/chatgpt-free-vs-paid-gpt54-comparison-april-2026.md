@@ -6,6 +6,7 @@ head:
     - name: keywords
       content: ChatGPT免费版和付费版区别,ChatGPT Plus值不值得买,GPT-5.4免费版,ChatGPT免费版限制,ChatGPT Plus功能,ChatGPT中文版,SnakeGPT,GPTCat
 outline: deep
+date: 2026-04-12
 ---
 
 # ChatGPT免费版和付费版区别大吗？2026年4月GPT-5.4免费版vs Plus深度对比

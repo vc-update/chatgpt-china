@@ -1,6 +1,6 @@
 ---
 title: 2025年Gemini 3发布！Google Gemini 3 Pro/Ultra功能解析、入口与国内注册使用教程
-date: 2025-12-14
+date: 2026-04-12
 description: 深度解析Google最新旗舰AI模型Gemini 3 Pro/Ultra的核心功能、推理能力、代理能力，以及国内用户如何稳定访问和使用注册教程。
 tags: 
   - Gemini 3

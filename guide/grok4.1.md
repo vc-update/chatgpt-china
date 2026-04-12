@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: Grok官网入口, Grok4.1使用教程, Grok中文版, xAI国内使用, snakegpt, gptcat, Grok镜像
+date: 2026-04-12
 ---
 
 # 2026年最新 Grok 官网入口：国内 Grok 4.1 保姆级使用指南

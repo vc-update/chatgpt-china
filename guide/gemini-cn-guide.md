@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: Gemini 3 Pro, Google Gemini国内使用, Gemini镜像网站, Gemini中文版, GPT-5.1对比, snakegpt, gptcat
+date: 2026-04-12
 ---
 
 # Gemini 最新指南 (2025年12月)：Gemini 3 Pro 如何使用及最新国内使用教程

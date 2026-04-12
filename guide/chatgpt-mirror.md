@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: ChatGPT镜像网站, 国内ChatGPT, ChatGPT中文版入口, 免费ChatGPT镜像, GPT-5.2镜像, gptcat, snakegpt
+date: 2026-04-12
 ---
 
 # 国内 ChatGPT 镜像网站整理 (2025 最新版)

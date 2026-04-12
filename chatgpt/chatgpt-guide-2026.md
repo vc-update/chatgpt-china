@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: ChatGPT中文版, ChatGPT5国内使用, ChatGPT2026, GPT-5入口, snakegpt, gptcat, ChatGPT镜像
+date: 2026-04-12
 ---
 
 # ChatGPT 中文版：2026年最新 ChatGPT5 国内使用教程（支持 GPT-5、GPT-4o）

@@ -6,6 +6,7 @@ head:
     - name: keywords
       content: ChatGPT下载,ChatGPT安装,ChatGPT电脑版下载,ChatGPT手机版下载,ChatGPT客户端,ChatGPT中文版,ChatGPT国内下载,SnakeGPT,GPTCat
 outline: deep
+date: 2026-04-12
 ---
 
 # ChatGPT下载安装教程：电脑+手机全平台安装方法（2026年4月最新）

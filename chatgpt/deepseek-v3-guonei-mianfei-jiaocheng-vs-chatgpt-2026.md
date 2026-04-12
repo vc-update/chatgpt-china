@@ -6,6 +6,7 @@ head:
     - name: keywords
       content: DeepSeek,DeepSeek怎么用,DeepSeek V3,DeepSeek教程,DeepSeek国内使用,DeepSeek vs ChatGPT,DeepSeek免费,深度求索,DeepSeek官网,AI大模型2026
 outline: deep
+date: 2026-04-12
 ---
 
 # DeepSeek怎么用？DeepSeek V3国内免费使用教程与ChatGPT对比

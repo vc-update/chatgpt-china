@@ -5,6 +5,7 @@ head:
   - - meta
     - name: keywords
       content: ChatGPT, ChatGPT官网, ChatGPT中文版, GPT-5.2, Claude 4.5, ChatGPT镜像, DeepSeek-v3
+date: 2026-04-12
 ---
 
 # 2025最新ChatGPT官网入口与ChatGPT中文版使用教程（附注册及防封指南）

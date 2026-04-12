@@ -5,6 +5,7 @@ head:
   - - meta
     - name: keywords
       content: chatgpt怎么用,chatgpt国内使用,chatgpt中文版,chatgpt官网入口,chatgpt无需翻墙,chatgpt使用教程2026
+date: 2026-04-12
 ---
 
 # ChatGPT怎么用？国内使用完整教程（2026最新）

@@ -18,6 +18,7 @@ head:
   - - meta
     - property: article:modified_time
       content: 2026-03-18
+date: 2026-04-12
 ---
 
 # 2026年国内免费用ChatGPT的完整方法（亲测有效）

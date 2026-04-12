@@ -5,6 +5,7 @@ head:
   - - meta
     - name: keywords
       content: ChatGPT中文版, GPT-5, GPT-4o, 国内镜像, AI绘画
+date: 2026-04-12
 ---
 
 # ChatGPT 中文版：GPT5 国内使用教程~（支持 GPT-5、GPT-4o、4o画图及o1、o3、o4）【12月更新】

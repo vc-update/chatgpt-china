@@ -1,5 +1,6 @@
 ---
 outline: deep
+date: 2026-04-12
 ---
 
 # ChatGPT中文版国内直连推荐

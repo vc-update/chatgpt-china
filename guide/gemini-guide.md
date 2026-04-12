@@ -1,6 +1,7 @@
 ---
 title: Gemini 国内怎么用？无需翻墙的 Gemini 可用平台推荐
 description: 详细讲解 Google Gemini 是什么、国内用户为什么无法直接使用，以及目前无需翻墙即可正常访问的 Gemini 可用平台与解决方案，适合新手与普通用户。
+date: 2026-04-12
 ---
 
 # Gemini 国内怎么用？无需翻墙的 Gemini 可用平台推荐

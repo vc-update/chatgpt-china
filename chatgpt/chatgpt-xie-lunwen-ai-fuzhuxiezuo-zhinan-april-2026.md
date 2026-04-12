@@ -6,6 +6,7 @@ head:
     - name: keywords
       content: ChatGPT写论文,AI写论文,GPT-5.4论文,论文润色,AI论文写作教程,ChatGPT学术写作,论文降重,AI文献综述,ChatGPT Prompt模板
 outline: deep
+date: 2026-04-12
 ---
 
 # ChatGPT写论文靠谱吗？2026年AI辅助论文写作完整指南（附Prompt模板）

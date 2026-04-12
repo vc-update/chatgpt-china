@@ -6,6 +6,7 @@ head:
     - name: keywords
       content: ChatGPT中文版和官网区别,ChatGPT中文版,ChatGPT官网,ChatGPT国内版,ChatGPT中文版推荐,ChatGPT怎么选,SnakeGPT,GPTCat
 outline: deep
+date: 2026-04-12
 ---
 
 # ChatGPT中文版和官网有什么区别？2026年4月全面对比分析

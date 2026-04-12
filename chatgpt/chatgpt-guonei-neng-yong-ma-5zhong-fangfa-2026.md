@@ -6,6 +6,7 @@ head:
     - name: keywords
       content: ChatGPT国内能用吗,ChatGPT国内使用,ChatGPT怎么用,ChatGPT中国,ChatGPT免翻墙,ChatGPT替代,国内用ChatGPT,ChatGPT访问方法,ChatGPT镜像,GPT国内
 outline: deep
+date: 2026-04-12
 ---
 
 # ChatGPT国内能用吗？2026年4月亲测5种方法

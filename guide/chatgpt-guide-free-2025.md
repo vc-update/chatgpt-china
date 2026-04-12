@@ -6,6 +6,7 @@ head:
   - - meta
     - name: keywords
       content: ChatGPT国内使用, GPT-5.2中文版, 提示词教程, ChatGPT镜像网站, snakegpt, gptcat, Claude镜像
+date: 2026-04-12
 ---
 
 # ChatGPT 国内使用指南：支持 GPT5.2，免费 ChatGPT 中文版镜像网站整理（2025/12/20）
