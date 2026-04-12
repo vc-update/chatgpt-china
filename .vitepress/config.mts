@@ -190,6 +190,7 @@ export default defineConfig({
           text: '🔥 核心聚焦',
           items: [
             { text: '专栏导读', link: '/chatgpt/' },
+            { text: 'ChatGPT官方网址入口（官网登录入口）2026年4月最新', link: '/chatgpt/chatgpt-guanfang-wangzhi-rukou-guanwang-denglu-2026' },
             { text: '为什么我更看好 GPT-5.4：它不只是会写代码，更像一个真正的 AI 工程搭子', link: '/chatgpt/gpt54_vs_claudecode_vs_deepseek_summary' },
             { text: 'ChatGPT中文版怎么用？2026年4月国内免翻墙终极指南（GPT-5.4+多模型对比）', link: '/chatgpt/chatgpt-zhongwen-ban-2026-zhinan-mianfei-guonei-shiyong' },
             { text: 'ChatGPT国内能用吗？2026年4月亲测5种方法（附最稳定方案推荐）', link: '/chatgpt/chatgpt-guonei-neng-yong-ma-5zhong-fangfa-2026' },
