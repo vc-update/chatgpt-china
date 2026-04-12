@@ -40,7 +40,6 @@ export default defineConfig({
     ['meta', { name: 'twitter:description', content: 'ChatGPT中文版官网入口，支持GPT-5.4等最新模型。国内免翻墙使用ChatGPT完整教程。' }],
     ['meta', { name: 'twitter:image', content: 'https://www.chatgpt-china.chat/og-image.png' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
-    ['link', { rel: 'canonical', href: 'https://www.chatgpt-china.chat' }],
     ['link', { rel: 'stylesheet', href: '/styles/custom.css' }],
     [
       'script',
@@ -282,6 +281,68 @@ export default defineConfig({
       ]
     },
 
-    
+
+  },
+
+  // 动态注入 per-page canonical + Article Schema + OG tags
+  transformPageData(pageData) {
+    const SITE_HOST = 'https://www.chatgpt-china.chat'
+    const SITE_NAME = 'ChatGPT中文版'
+    const fm = pageData.frontmatter || {}
+    pageData.frontmatter.head = pageData.frontmatter.head || []
+
+    // 动态 canonical URL（修复全站指向首页的致命 bug）
+    const cleanPath = pageData.relativePath
+      .replace(/\.md$/, '')
+      .replace(/\/index$/, '')
+    const canonicalUrl = cleanPath ? `${SITE_HOST}/${cleanPath}` : SITE_HOST
+    pageData.frontmatter.head.push(
+      ['link', { rel: 'canonical', href: canonicalUrl }]
+    )
+
+    // 动态 OG tags（覆盖全局静态值）
+    const pageTitle = fm.title || pageData.title || SITE_NAME
+    const pageDesc = fm.description || pageData.description || ''
+    pageData.frontmatter.head.push(
+      ['meta', { property: 'og:title', content: pageTitle }],
+      ['meta', { property: 'og:description', content: pageDesc }],
+      ['meta', { property: 'og:url', content: canonicalUrl }]
+    )
+
+    // 为非首页注入 Article Schema
+    if (pageData.relativePath !== 'index.md') {
+      const articleSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: pageTitle,
+        description: pageDesc,
+        datePublished: fm.date
+          ? new Date(fm.date).toISOString()
+          : new Date('2026-01-01').toISOString(),
+        dateModified: fm.lastUpdated
+          ? new Date(fm.lastUpdated).toISOString()
+          : new Date().toISOString(),
+        author: {
+          '@type': 'Organization',
+          name: SITE_NAME,
+          url: SITE_HOST
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: SITE_NAME,
+          url: SITE_HOST
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': canonicalUrl
+        },
+        inLanguage: 'zh-CN'
+      }
+      pageData.frontmatter.head.push([
+        'script',
+        { type: 'application/ld+json' },
+        JSON.stringify(articleSchema)
+      ])
+    }
   }
 })
