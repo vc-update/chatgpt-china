@@ -190,6 +190,7 @@ export default defineConfig({
           text: '🔥 核心聚焦',
           items: [
             { text: '专栏导读', link: '/chatgpt/' },
+            { text: '2026年用AI做副业的现实打法：7条能落地的变现路线，适合普通人慢慢做起来', link: '/chatgpt/ai-side-hustle-guide-2026' },
             { text: 'ChatGPT官方网址入口（官网登录入口）2026年4月最新', link: '/chatgpt/chatgpt-guanfang-wangzhi-rukou-guanwang-denglu-2026' },
             { text: '为什么我更看好 GPT-5.4：它不只是会写代码，更像一个真正的 AI 工程搭子', link: '/chatgpt/gpt54_vs_claudecode_vs_deepseek_summary' },
             { text: 'ChatGPT中文版怎么用？2026年4月国内免翻墙终极指南（GPT-5.4+多模型对比）', link: '/chatgpt/chatgpt-zhongwen-ban-2026-zhinan-mianfei-guonei-shiyong' },
