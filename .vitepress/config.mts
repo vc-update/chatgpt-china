@@ -196,6 +196,7 @@ export default defineConfig({
             { text: '为什么我更看好 GPT-5.4：它不只是会写代码，更像一个真正的 AI 工程搭子', link: '/chatgpt/gpt54_vs_claudecode_vs_deepseek_summary' },
             { text: 'ChatGPT中文版怎么用？2026年4月国内免翻墙终极指南（GPT-5.4+多模型对比）', link: '/chatgpt/chatgpt-zhongwen-ban-2026-zhinan-mianfei-guonei-shiyong' },
             { text: 'ChatGPT国内能用吗？2026年4月亲测5种方法（附最稳定方案推荐）', link: '/chatgpt/chatgpt-guonei-neng-yong-ma-5zhong-fangfa-2026' },
+            { text: '别只学提示词了：一篇讲透 AI 办公的实战博客', link: '/chatgpt/ai_office_practical_blog' },
             { text: 'DeepSeek怎么用？DeepSeek V3国内免费使用教程与ChatGPT对比（2026年4月）', link: '/chatgpt/deepseek-v3-guonei-mianfei-jiaocheng-vs-chatgpt-2026' },
             { text: 'AI提示词大全2026：80个ChatGPT/Claude万能Prompt模板（工作学习全场景覆盖）', link: '/chatgpt/ai-tishici-daquan-chatgpt-claude-prompt-moban-2026' },
             { text: 'Claude 4.6国内怎么用？2026年4月免翻墙使用Claude全教程（附中文Prompt技巧）', link: '/chatgpt/claude-4-6-guonei-mianfanqiang-shiyong-jiaocheng-2026' },
