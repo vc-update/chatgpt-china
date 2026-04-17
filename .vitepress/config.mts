@@ -191,6 +191,8 @@ export default defineConfig({
           items: [
             { text: '专栏导读', link: '/chatgpt/' },
             { text: 'ChatGPT官方网址入口（官网登录入口）2026年4月最新', link: '/chatgpt/chatgpt-guanfang-wangzhi-rukou-guanwang-denglu-2026' },
+            { text: '别光看参数了，聊聊 Claude Opus 4.7 到底能给普通人带来什么', link: '/chatgpt/claude-opus-4.7-kepu-2026' },
+            { text: 'DeepSeek V3.2 重磅发布：国产开源大模型再进化', link: '/chatgpt/deepseek-v3.2-jieshao-2026' },
             { text: '我是怎么把 ChatGPT 用顺手的：一篇讲透提示词怎么写的个人博客', link: '/chatgpt/chatgpt_prompt_blog' },
             { text: '2026年用AI做副业的现实打法：7条能落地的变现路线，适合普通人慢慢做起来', link: '/chatgpt/ai-side-hustle-guide-2026' },
             { text: '为什么我更看好 GPT-5.4：它不只是会写代码，更像一个真正的 AI 工程搭子', link: '/chatgpt/gpt54_vs_claudecode_vs_deepseek_summary' },
