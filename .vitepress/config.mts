@@ -191,6 +191,7 @@ export default defineConfig({
           items: [
             { text: '专栏导读', link: '/chatgpt/' },
             { text: 'ChatGPT官方网址入口（官网登录入口）2026年4月最新', link: '/chatgpt/chatgpt-guanfang-wangzhi-rukou-guanwang-denglu-2026' },
+            { text: '多模态AI模型的技术原理与未来发展：从GPT-4V到真正的世界模型', link: '/chatgpt/multimodal-ai-technical-principles-future-development-2026' },
             { text: 'AI设计工具的新篇章：从Claude Design看AI如何重塑创意工作流', link: '/chatgpt/ai-design-tools-claude-design-analysis-2026' },
             { text: 'Claude Opus 4.7深度解析：AI协作范式的重要转变', link: '/chatgpt/claude-opus-4-7-depth-analysis-2026' },
             { text: '别光盯着GPT和Claude了，马斯克的"虚拟员工"要来了', link: '/chatgpt/grok-computer-virtual-assistant-2026' },
