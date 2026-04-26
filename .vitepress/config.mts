@@ -191,6 +191,7 @@ export default defineConfig({
           items: [
             { text: '专栏导读', link: '/chatgpt/' },
             { text: 'ChatGPT官方网址入口（官网登录入口）2026年4月最新', link: '/chatgpt/chatgpt-guanfang-wangzhi-rukou-guanwang-denglu-2026' },
+            { text: 'AI编程助手2026年横向评测：Cursor、Windsurf、Copilot、Claude Code到底谁更强？', link: '/chatgpt/ai-coding-agent-comparison-2026' },
             { text: 'Claude 4.6 国内使用指南：支持 Claude-4.6-opus，免费体验使用【4月最新更新】', link: '/chatgpt/claude-4-6-opus-china-guide-april-2026' },
             { text: 'GPT-5.5重磅发布：这不是一次普通升级，OpenAI在重新定义"AI助手"', link: '/chatgpt/gpt5-5-deep-analysis-april-2026' },
             { text: '多模态AI模型的技术原理与未来发展：从GPT-4V到真正的世界模型', link: '/chatgpt/multimodal-ai-technical-principles-future-development-2026' },
