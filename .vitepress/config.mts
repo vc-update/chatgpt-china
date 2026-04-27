@@ -195,6 +195,7 @@ export default defineConfig({
             { text: 'AI编程助手2026年横向评测：Cursor、Windsurf、Copilot、Claude Code到底谁更强？', link: '/chatgpt/ai-coding-agent-comparison-2026' },
             { text: 'Claude 4.6 国内使用指南：支持 Claude-4.6-opus，免费体验使用【4月最新更新】', link: '/chatgpt/claude-4-6-opus-china-guide-april-2026' },
             { text: 'Anthropic Claude官网中文版：国内最全Claude opus使用指南【4月最新更新】', link: '/chatgpt/claude-opus-official-china-guide-april-2026' },
+            { text: 'Anthropic Claude官网中文版：国内最全Claude opus使用指南【4月最新更新】', link: '/chatgpt/claude-guide-2026-04' },
             { text: 'GPT-5.5重磅发布：这不是一次普通升级，OpenAI在重新定义"AI助手"', link: '/chatgpt/gpt5-5-deep-analysis-april-2026' },
             { text: '多模态AI模型的技术原理与未来发展：从GPT-4V到真正的世界模型', link: '/chatgpt/multimodal-ai-technical-principles-future-development-2026' },
             { text: 'AI设计工具的新篇章：从Claude Design看AI如何重塑创意工作流', link: '/chatgpt/ai-design-tools-claude-design-analysis-2026' },
