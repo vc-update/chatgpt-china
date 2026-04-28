@@ -6,15 +6,14 @@ export default defineConfig({
   description: "ChatGPT中文版官网入口，支持GPT-5.4、Claude 4.6、Gemini 3.5 Pro等最新模型。提供国内可用ChatGPT镜像网站推荐、使用教程、模型对比评测，无需翻墙即可体验ChatGPT全部功能。",
 
 
-  // 2. 关键 SEO 配置 (你漏掉的部分)
-  // 自动生成 sitemap，Bing 爬虫全靠它来抓取你的页面
+  // Sitemap：daily + priority 1.0，提升 Bing 爬取频率
   sitemap: {
     hostname: 'https://www.chatgpt-china.chat',
     transformItems: (items) => {
       return items.map(item => ({
         ...item,
-        changefreq: 'weekly',
-        priority: 0.7,
+        changefreq: 'daily',
+        priority: 1.0,
         lastmod: new Date().toISOString()
       }))
     }
@@ -189,7 +188,10 @@ export default defineConfig({
         {
           text: '🔥 核心聚焦',
           items: [
+            { text: 'ChatGPT官网完全指南：2026年4月国内访问+中文版镜像推荐（支持GPT-5.4无需翻墙）', link: '/chatgpt/chatgpt-guanwang-zhongwen-ban-gpt5-guonei-jiaocheng-april-2026' },
             { text: '专栏导读', link: '/chatgpt/' },
+            { text: 'ChatGPT官网中文版：GPT-5.4国内使用完全攻略【2026年4月最新】', link: '/chatgpt/chatgpt-gpt5-guonei-wanzheng-gonglue-2026' },
+            { text: 'ChatGPT官方网址入口（官网登录入口）｜国内免翻墙使用完整方案【2026年4月最新】', link: '/chatgpt/chatgpt-guanfang-wangzhi-rukou-denglu-mianfanqiang-2026' },
             { text: 'ChatGPT官方网址入口（官网登录入口）2026年4月最新', link: '/chatgpt/chatgpt-guanfang-wangzhi-rukou-guanwang-denglu-2026' },
             { text: 'OpenAI��AWS�Ž⣺Bedrock Managed Agents�ı�AI���ֱ�֣�', link: '/chatgpt/openai-aws-bedrock-managed-agents-2026' },
             { text: 'AI编码代理在9秒内删了生产库——PocketOS惨案拆解', link: '/chatgpt/ai-coding-agent-deletes-production-database-2026' },
