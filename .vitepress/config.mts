@@ -188,6 +188,7 @@ export default defineConfig({
         {
           text: '🔥 核心聚焦',
           items: [
+            { text: 'chatgpt官网', link: '/chatgpt/auto-article-1777391966918' },
             { text: 'ChatGPT官网完全指南：2026年4月国内访问+中文版镜像推荐（支持GPT-5.4无需翻墙）', link: '/chatgpt/chatgpt-guanwang-zhongwen-ban-gpt5-guonei-jiaocheng-april-2026' },
             { text: '专栏导读', link: '/chatgpt/' },
             { text: 'ChatGPT官网中文版：GPT-5.4国内使用完全攻略【2026年4月最新】', link: '/chatgpt/chatgpt-gpt5-guonei-wanzheng-gonglue-2026' },
