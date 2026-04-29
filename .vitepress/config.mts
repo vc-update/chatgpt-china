@@ -188,6 +188,7 @@ export default defineConfig({
         {
           text: '🔥 核心聚焦',
           items: [
+            { text: '"ChatGPT官网2026年04月最新指南：官网入口、注册登录、国内使用与替代方案全解析"', link: '/chatgpt/chatgpt-guanwang-april-2026' },
             { text: 'ChatGPT官网入口在哪？2026年4月国内打开ChatGPT的3种方法', link: '/chatgpt/chatgpt-guanwang-rukou-guonei-fangfa-april-2026-429' },
             { text: 'ChatGPT官网完全指南：2026年4月国内访问+中文版镜像推荐（支持GPT-5.4无需翻墙）', link: '/chatgpt/chatgpt-guanwang-zhongwen-ban-gpt5-guonei-jiaocheng-april-2026' },
             { text: '专栏导读', link: '/chatgpt/' },
