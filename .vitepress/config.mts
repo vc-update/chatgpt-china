@@ -2,8 +2,8 @@
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: "ChatGPT中文版 | ChatGPT官网入口 | ChatGPT镜像网站推荐【2026最新】",
-  description: "ChatGPT中文版官网入口，支持GPT-5.4、Claude 4.6、Gemini 3.5 Pro等最新模型。提供国内可用ChatGPT镜像网站推荐、使用教程、模型对比评测，无需翻墙即可体验ChatGPT全部功能。",
+  title: "ChatGPT国内使用教程 | ChatGPT怎么用 | GPT-5.4最新资讯【2026】",
+  description: "2026年最新ChatGPT国内使用教程，解决ChatGPT打不开、注册失败、账号封禁等问题。提供GPT-5.4功能解析、ChatGPT国内能用吗、免翻墙方案与最新AI动态，帮你快速上手ChatGPT。",
 
 
   // Sitemap：daily + priority 1.0，提升 Bing 爬取频率
@@ -23,20 +23,20 @@ export default defineConfig({
 
   head: [
     ['meta', { name: 'msvalidate.01', content: '283F4ED132291BB65C882E27214A15B8' }],
-    ['meta', { name: 'keywords', content: 'ChatGPT,ChatGPT中文版,ChatGPT官网,ChatGPT镜像网站,ChatGPT镜像站,GPT-5.4,ChatGPT国内使用,OpenAI,AI对话,人工智能,大语言模型,ChatGPT注册,ChatGPT教程,GPT-5' }],
+    ['meta', { name: 'keywords', content: 'ChatGPT国内使用,ChatGPT怎么用,ChatGPT打不开,ChatGPT注册教程,ChatGPT账号,GPT-5.4,ChatGPT免翻墙,ChatGPT最新动态,OpenAI最新消息,ChatGPT国内能用吗,ChatGPT教程,ChatGPT使用方法' }],
     ['meta', { name: 'author', content: 'ChatGPT中文版' }],
     ['meta', { name: 'robots', content: 'index,follow' }],
     ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
-    ['meta', { property: 'og:title', content: 'ChatGPT中文版 | ChatGPT官网入口 | ChatGPT镜像网站推荐【2026最新】' }],
-    ['meta', { property: 'og:description', content: 'ChatGPT中文版官网入口，支持GPT-5.4等最新模型。国内可用ChatGPT镜像网站推荐，无需翻墙即可体验ChatGPT全部功能。' }],
+    ['meta', { property: 'og:title', content: 'ChatGPT国内使用教程 | ChatGPT怎么用 | GPT-5.4最新资讯【2026】' }],
+    ['meta', { property: 'og:description', content: '2026年最新ChatGPT国内使用教程，解决打不开/注册失败/账号问题。GPT-5.4功能解析、免翻墙方案与AI最新资讯。' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:url', content: 'https://www.chatgpt-china.chat' }],
     ['meta', { property: 'og:image', content: 'https://www.chatgpt-china.chat/og-image.png' }],
     ['meta', { property: 'og:locale', content: 'zh_CN' }],
     ['meta', { property: 'og:site_name', content: 'ChatGPT中文版' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:title', content: 'ChatGPT中文版 | ChatGPT官网入口 | 2026最新使用指南' }],
-    ['meta', { name: 'twitter:description', content: 'ChatGPT中文版官网入口，支持GPT-5.4等最新模型。国内免翻墙使用ChatGPT完整教程。' }],
+    ['meta', { name: 'twitter:title', content: 'ChatGPT国内使用教程 | ChatGPT怎么用 | 2026最新GPT-5.4资讯' }],
+    ['meta', { name: 'twitter:description', content: '2026年ChatGPT国内使用教程，解决打不开/注册/账号问题，GPT-5.4功能解析与免翻墙方案。' }],
     ['meta', { name: 'twitter:image', content: 'https://www.chatgpt-china.chat/og-image.png' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     ['link', { rel: 'stylesheet', href: '/styles/custom.css' }],
@@ -188,6 +188,8 @@ export default defineConfig({
         {
           text: '🔥 核心聚焦',
           items: [
+            { text: 'ChatGPT账号注册完整指南【2026年05月最新】官网+镜像站双方案', link: '/chatgpt/chatgpt-account-registration-guide-2026-05' },
+            { text: 'ChatGPT官网是什么？2026最新官网入口、登录方法与国内使用指南', link: '/chatgpt/chatgpt-guanwang-shi-shenme-2026' },
             { text: '"ChatGPT官网中文版：2026年05月最新入口、使用方法与国内实用指南"', link: '/chatgpt/chatgpt-guanwang-zhongwenban-2026-05' },
             { text: '"ChatGPT官网 2026年05月最新指南：官网入口、国内使用教程、注册登录与中文版替代方案"', link: '/chatgpt/chatgpt-guanwang-2026-05-zuixin-zhinan-502' },
             { text: '"ChatGPT官网2026年05月最新指南：官方入口、注册使用教程与国内可行方案"', link: '/chatgpt/chatgpt-guanwang-2026-05' },
