@@ -188,6 +188,7 @@ export default defineConfig({
         {
           text: '🔥 核心聚焦',
           items: [
+            { text: '"ChatGPT官网中文版：2026年05月最新入口、使用方法与国内实用指南"', link: '/chatgpt/chatgpt-guanwang-zhongwenban-2026-05' },
             { text: '"ChatGPT官网 2026年05月最新指南：官网入口、国内使用教程、注册登录与中文版替代方案"', link: '/chatgpt/chatgpt-guanwang-2026-05-zuixin-zhinan-502' },
             { text: '"ChatGPT官网2026年05月最新指南：官方入口、注册使用教程与国内可行方案"', link: '/chatgpt/chatgpt-guanwang-2026-05' },
             { text: '"ChatGPT官网最新使用指南（2026年05月）：官网入口、注册登录、国内访问、常见问题全解"', link: '/chatgpt/chatgpt-guanwang-2026-05-zuixin-zhinan' },
