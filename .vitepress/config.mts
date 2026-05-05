@@ -2,8 +2,8 @@
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: "ChatGPT国内使用教程 | ChatGPT怎么用 | GPT-5.4最新资讯【2026】",
-  description: "2026年最新ChatGPT国内使用教程，解决ChatGPT打不开、注册失败、账号封禁等问题。提供GPT-5.4功能解析、ChatGPT国内能用吗、免翻墙方案与最新AI动态，帮你快速上手ChatGPT。",
+  title: "ChatGPT国内使用教程 | ChatGPT官网打不开解决方法 | ChatGPT中文版入口【2026】",
+  description: "2026年最新ChatGPT国内使用教程，解决ChatGPT官网打不开、注册失败、账号登录和国内访问问题。提供ChatGPT官网国内怎么打开、ChatGPT中文版入口、免翻墙网页版方案与GPT-5.4最新资讯，帮你快速上手ChatGPT。",
 
 
   // Sitemap：daily + priority 1.0，提升 Bing 爬取频率
@@ -23,7 +23,7 @@ export default defineConfig({
 
   head: [
     ['meta', { name: 'msvalidate.01', content: '283F4ED132291BB65C882E27214A15B8' }],
-    ['meta', { name: 'keywords', content: 'ChatGPT国内使用,ChatGPT怎么用,ChatGPT打不开,ChatGPT注册教程,ChatGPT账号,GPT-5.4,ChatGPT免翻墙,ChatGPT最新动态,OpenAI最新消息,ChatGPT国内能用吗,ChatGPT教程,ChatGPT使用方法' }],
+    ['meta', { name: 'keywords', content: 'ChatGPT国内使用,ChatGPT官网打不开,ChatGPT官网国内怎么打开,ChatGPT国内入口,ChatGPT中文版,ChatGPT网页版,ChatGPT怎么用,ChatGPT注册教程,ChatGPT账号,GPT-5.4,ChatGPT免翻墙,ChatGPT最新动态,OpenAI最新消息,ChatGPT国内能用吗,ChatGPT教程,ChatGPT使用方法' }],
     ['meta', { name: 'author', content: 'ChatGPT中文版' }],
     ['meta', { name: 'robots', content: 'index,follow' }],
     ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
@@ -188,7 +188,10 @@ export default defineConfig({
         {
           text: '🔥 核心聚焦',
           items: [
-            { text: '"chatgpt账号注册教程（2026年05月最新）：国内注册、验证、登录与替代方案完整指南"', link: '/chatgpt/chatgpt-account-registration-2026-05' },
+            { text: '"ChatGPT账号注册教程（2026年05月最新）：国内注册、验证、登录与替代方案全指南"', link: '/chatgpt/chatgpt-account-registration-2026-05-505' },
+            { text: 'ChatGPT官网打不开怎么办？国内访问入口与中文版使用指南', link: '/chatgpt/chatgpt-official-site-not-working-china-2026-05' },
+            { text: 'ChatGPT官网是什么？2026最新官网入口、登录方法与国内使用指南', link: '/chatgpt/chatgpt-guanwang-shi-shenme-2026' },
+            { text: '"ChatGPT官网中文版：2026年05月最新入口、使用方法与国内实用指南"', link: '/chatgpt/chatgpt-guanwang-zhongwenban-2026-05' },
             { text: '"ChatGPT账号注册完整教程（2026年05月最新）：三种方法全攻略"', link: '/chatgpt/chatgpt-account-registration-guide-2026-05-504-2' },
             { text: 'ChatGPT账号注册完整教程（2026年05月最新）：国内注册+免注册直用全攻略', link: '/chatgpt/chatgpt-account-registration-guide-2026-05-504' },
             { text: 'ChatGPT账号注册完整教程【2026年05月最新】官网+国内镜像两种方法', link: '/chatgpt/chatgpt-account-registration-guide-2026-05-503' },
