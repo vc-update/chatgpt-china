@@ -188,6 +188,7 @@ export default defineConfig({
         {
           text: '🔥 核心聚焦',
           items: [
+            { text: 'ChatGPT账号注册2026年5月最新完整指南：国内注册全流程+避坑手册', link: '/chatgpt/auto-article-1778218222980' },
             { text: '"ChatGPT账号注册教程（2026年05月最新）：官网注册、邮箱验证、国内可用方案完整指南"', link: '/chatgpt/chatgpt-account-registration-2026-05-507-2' },
             { text: '"ChatGPT账号注册教程（2026年05月最新）：国内用户从准备、注册到验证的完整指南"', link: '/chatgpt/chatgpt-account-registration-2026-05-507' },
             { text: '"ChatGPT账号注册教程（2026年05月最新）：国内用户从官方注册到镜像站使用全流程"', link: '/chatgpt/chatgpt-account-registration-2026-05-506' },
