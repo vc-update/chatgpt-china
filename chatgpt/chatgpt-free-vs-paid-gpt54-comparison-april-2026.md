@@ -171,7 +171,7 @@ OpenAI目前没有这个计划。历史上免费版一直比付费版落后1-2�
 
 ## 相关阅读
 
-- [ChatGPT中文版官网入口与GPT-5.4深度实测](./chatgpt-official-entry-gpt5-4-deep-test-april-2026)
+- [ChatGPT中文版官网入口与GPT-5.4深度实测](./chatgpt-guanwang-2026-05-zuixin-zhinan)
 - [ChatGPT国内使用完整指南](./chatgpt-chinese-gpt5.4-thinking-guide-2026)
 - [ChatGPT中文版哪个好用？5大平台实测排名](https://www.chatgpt-chinese-guide.com/chatgpt/chatgpt-zhongwen-ban-nage-haoyong-5da-pingtai-shice-paiming-2026)
 - [Gemini 3.1 Pro国内使用教程](https://www.gemini-guides.com/guide/gemini-31-pro-chinese-complete-tutorial-april-2026)

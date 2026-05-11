@@ -254,10 +254,10 @@ AI生成的内容可能被专业检测工具识别。建议将ChatGPT作为**辅
 
 ## 延伸阅读
 
-- [ChatGPT中文版：国内访问指南（支持多模型）](/chatgpt/chatgpt-chinese-access-guide-multi-model-2026)
+- [ChatGPT中文版：国内访问指南（支持多模型）](/chatgpt/chatgpt-chinese-version)
 - [GPT-5.4 国内使用指南（2026最新）](/chatgpt/gpt5.4-china-guide-2026)
 - [ChatGPT国内怎么用？官网入口、中文版教程一次讲清](/guide/chatgpt-china-how-to-use-2026)
-- [2026最新国内可用ChatGPT镜像网站合集](/chatgpt/chatgpt-mirrors-ultimate-guide-2026)
+- [2026最新国内可用ChatGPT镜像网站合集](/chatgpt/chatgpt-mirror-sites-ranking-april-2026)
 - [ChatGPT官网打不开怎么办？](/guide/chatgpt-official-site-not-working-2026)
 
 **关联资源：**

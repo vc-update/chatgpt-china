@@ -1,5 +1,11 @@
 ---
-date: 2026-04-12
+title: GPT-5最新情报：从GPT-5.2到GPT-5.4性能飞跃与发布动态
+description: GPT-5系列最新情报汇总，详解GPT-5.2到GPT-5.4的性能升级、System 2思维机制、原生Sora视频集成等重大突破，附国内使用方法。
+date: 2026-04-28
+head:
+  - - meta
+    - name: keywords
+      content: GPT-5,GPT-5.4,GPT-5.2,GPT5最新消息,OpenAI,ChatGPT最新版本,AI模型
 ---
 
 # GPT-5 最新情报：性能飞跃与发布动态 (2025.12)

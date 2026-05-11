@@ -192,7 +192,7 @@ AI不会替你写论文，但它确实是一个强大的辅助工具。合理使
 
 ## 延伸阅读
 
-- [ChatGPT官网入口与使用指南](/chatgpt/chatgpt-guanwang-rukou-zhongwen-ban-zhinan-april-2026)
+- [ChatGPT官网入口与使用指南](/chatgpt/chatgpt-guanwang-2026-05-zuixin-zhinan)
 - [论文润色Prompt模板大全](/guide/chatgpt-paper-polishing-prompts)
 - [GPT-5.4国内使用指南](/chatgpt/gpt5.4-china-guide-2026)
 - [ChatGPT中文版入口](https://www.chatgpt-chinese.chat)

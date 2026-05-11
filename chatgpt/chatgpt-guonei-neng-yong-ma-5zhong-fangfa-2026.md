@@ -249,7 +249,7 @@ ChatGPT官网（chatgpt.com）在中国大陆确实无法直接访问，但这�
 
 ### 📌 相关推荐
 
-- [ChatGPT中文版访问指南2026：国内免翻墙使用GPT-5.4完整教程](/chatgpt/chatgpt-zhongwen-ban-zhinan-guonei-mianfei-shiyong-2026)
+- [ChatGPT中文版访问指南2026：国内免翻墙使用GPT-5.4完整教程](/chatgpt/chatgpt-zhongwen-ban-2026-zhinan-mianfei-guonei-shiyong)
 - [ChatGPT镜像网站哪个好用？2026年4月实测排名](/chatgpt/chatgpt-mirror-sites-ranking-april-2026)
 - [ChatGPT官网打不开怎么办？国内访问解决方案大全](/chatgpt/chatgpt-official-site-access-solutions-april-2026)
 - [GPT-5.4怎么用？国内免翻墙使用完整教程](/chatgpt/gpt5-4-how-to-use-thinking-guide-april-2026)

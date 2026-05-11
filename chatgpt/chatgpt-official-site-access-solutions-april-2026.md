@@ -190,5 +190,5 @@ ChatGPT官网打不开，对国内用户来说已经不是什么新鲜事了。�
 - [ChatGPT镜像网站哪个好用？实测排名](./chatgpt-mirror-sites-ranking-april-2026)
 - [ChatGPT下载安装教程：全平台指南](./chatgpt-download-install-guide-april-2026)
 - [ChatGPT中文版怎么用？GPT-5.4使用全攻略](./chatgpt-chinese-gpt5.4-thinking-guide-2026)
-- [ChatGPT国内使用完整教程](./chatgpt-how-to-use-guide-2026)
+- [ChatGPT国内使用完整教程](./how-to-use-chatgpt)
 - [Grok 4.2使用指南](https://www.grok-china.com/tutorial/grok-4-2-april-2026-full-capability-guide)

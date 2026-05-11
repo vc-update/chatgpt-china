@@ -1,3 +1,13 @@
+---
+title: ChatGPT提示词实战：一篇讲透怎么写出高质量Prompt
+description: 从新手到高手的ChatGPT提示词写作指南，解决AI总是答不到点上的问题，用真实案例教你写出精准、高效的Prompt，让ChatGPT输出你真正想要的内容。
+date: 2026-04-28
+head:
+  - - meta
+    - name: keywords
+      content: ChatGPT提示词,Prompt技巧,ChatGPT怎么用,提示词工程,AI提问技巧,ChatGPT教程
+---
+
 # 我是怎么把 ChatGPT 用顺手的：一篇讲透提示词怎么写的个人博客
 
 很多人第一次用 ChatGPT 的时候，都会经历一个很微妙的阶段。

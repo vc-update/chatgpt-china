@@ -1,4 +1,6 @@
 ﻿import { defineConfig } from 'vitepress'
+import { statSync } from 'node:fs'
+import { resolve } from 'node:path'
 
 export default defineConfig({
   lang: 'zh-CN',
@@ -6,16 +8,39 @@ export default defineConfig({
   description: "2026年最新ChatGPT国内使用教程，解决ChatGPT官网打不开、注册失败、账号登录和国内访问问题。提供ChatGPT官网国内怎么打开、ChatGPT中文版入口、免翻墙网页版方案与GPT-5.4最新资讯，帮你快速上手ChatGPT。",
 
 
-  // Sitemap：daily + priority 1.0，提升 Bing 爬取频率
+  // Sitemap：按层级分配 priority，lastmod 用文件 mtime，避免"伪新鲜"降权
   sitemap: {
     hostname: 'https://www.chatgpt-china.chat',
     transformItems: (items) => {
-      return items.map(item => ({
-        ...item,
-        changefreq: 'daily',
-        priority: 1.0,
-        lastmod: new Date().toISOString()
-      }))
+      const SRC_ROOT = resolve(__dirname, '..')
+      return items.map(item => {
+        const url = item.url || ''
+        // 优先级分级
+        let priority = 0.6
+        let changefreq: 'daily' | 'weekly' | 'monthly' = 'weekly'
+        if (url === '' || url === '/' || url === 'index.html') {
+          priority = 1.0
+          changefreq = 'weekly'
+        } else if (/^(chatgpt|guide)\/?$/.test(url) || /^(chatgpt|guide)\/index\.html$/.test(url)) {
+          priority = 0.8
+          changefreq = 'weekly'
+        } else if (url === 'disclaimer.html') {
+          priority = 0.3
+          changefreq = 'monthly'
+        } else {
+          priority = 0.7
+          changefreq = 'weekly'
+        }
+        // lastmod 用源 md 文件的 mtime（没有则跳过，让 vitepress 用 git/默认值）
+        let lastmod: string | undefined
+        try {
+          const mdPath = resolve(SRC_ROOT, url.replace(/\.html$/, '.md').replace(/\/$/, '/index.md'))
+          lastmod = statSync(mdPath).mtime.toISOString()
+        } catch {
+          lastmod = undefined
+        }
+        return { ...item, changefreq, priority, ...(lastmod ? { lastmod } : {}) }
+      })
     }
   },
   // 显示最后更新时间，搜索引擎喜欢新鲜内容
@@ -183,134 +208,119 @@ export default defineConfig({
         }
       ],
 
-      // 2. 【ChatGPT专栏】侧边栏 - 已更新为左侧文件夹内的所有文件
+      // 2. 【ChatGPT专栏】侧边栏 - 按主题重组，去重后保留 59 篇
       '/chatgpt/': [
         {
-          text: '🔥 核心聚焦',
+          text: '🔥 核心入口',
+          collapsed: false,
           items: [
-            { text: 'ChatGPT怎么注册？2026年5月最新保姆级教程（国内可用 + 免注册方案）', link: '/chatgpt/chatgpt-how-to-register-2026-05' },
-            { text: 'ChatGPT国内使用完整指南（2026年5月最新）：免翻墙、稳定直连、保姆级教程', link: '/chatgpt/chatgpt-guonei-shiyong-complete-guide-2026-05-510-2' },
-            { text: 'ChatGPT国内使用完整指南2026年5月：免翻墙直连+官网注册全流程（GPT-5.4最新）', link: '/chatgpt/chatgpt-guonei-shiyong-complete-guide-2026-05-510' },
-            { text: 'ChatGPT国内使用完整指南2026年5月最新：免翻墙直连+镜像站推荐+保姆级教程', link: '/chatgpt/chatgpt-guonei-shiyong-complete-guide-2026-05-509-2' },
-            { text: 'ChatGPT国内使用完全指南2026年5月最新：免翻墙直连GPT-5.4保姆级教程', link: '/chatgpt/chatgpt-guonei-shiyong-complete-guide-2026-05-509' },
-            { text: 'ChatGPT国内使用完整指南（2026年5月最新）：免翻墙直连+官网注册+APP安装全攻略', link: '/chatgpt/chatgpt-guonei-shiyong-complete-guide-2026-05' },
-            { text: 'ChatGPT账号注册2026年5月最新完整指南：国内注册全流程+避坑手册', link: '/chatgpt/auto-article-1778218222980' },
-            { text: '"ChatGPT账号注册教程（2026年05月最新）：官网注册、邮箱验证、国内可用方案完整指南"', link: '/chatgpt/chatgpt-account-registration-2026-05-507-2' },
-            { text: '"ChatGPT账号注册教程（2026年05月最新）：国内用户从准备、注册到验证的完整指南"', link: '/chatgpt/chatgpt-account-registration-2026-05-507' },
-            { text: '"ChatGPT账号注册教程（2026年05月最新）：国内用户从官方注册到镜像站使用全流程"', link: '/chatgpt/chatgpt-account-registration-2026-05-506' },
-            { text: '"ChatGPT账号注册教程（2026年05月最新）：国内注册、验证、登录与替代方案全指南"', link: '/chatgpt/chatgpt-account-registration-2026-05-505' },
-            { text: 'ChatGPT官网打不开怎么办？国内访问入口与中文版使用指南', link: '/chatgpt/chatgpt-official-site-not-working-china-2026-05' },
-            { text: 'ChatGPT官网是什么？2026最新官网入口、登录方法与国内使用指南', link: '/chatgpt/chatgpt-guanwang-shi-shenme-2026' },
-            { text: '"ChatGPT官网中文版：2026年05月最新入口、使用方法与国内实用指南"', link: '/chatgpt/chatgpt-guanwang-zhongwenban-2026-05' },
-            { text: '"ChatGPT账号注册完整教程（2026年05月最新）：三种方法全攻略"', link: '/chatgpt/chatgpt-account-registration-guide-2026-05-504-2' },
-            { text: 'ChatGPT账号注册完整教程（2026年05月最新）：国内注册+免注册直用全攻略', link: '/chatgpt/chatgpt-account-registration-guide-2026-05-504' },
-            { text: 'ChatGPT账号注册完整教程【2026年05月最新】官网+国内镜像两种方法', link: '/chatgpt/chatgpt-account-registration-guide-2026-05-503' },
-            { text: 'ChatGPT账号注册完整指南【2026年05月最新】官网+镜像站双方案', link: '/chatgpt/chatgpt-account-registration-guide-2026-05' },
-            { text: 'ChatGPT官网是什么？2026最新官网入口、登录方法与国内使用指南', link: '/chatgpt/chatgpt-guanwang-shi-shenme-2026' },
-            { text: '"ChatGPT官网中文版：2026年05月最新入口、使用方法与国内实用指南"', link: '/chatgpt/chatgpt-guanwang-zhongwenban-2026-05' },
-            { text: '"ChatGPT官网 2026年05月最新指南：官网入口、国内使用教程、注册登录与中文版替代方案"', link: '/chatgpt/chatgpt-guanwang-2026-05-zuixin-zhinan-502' },
-            { text: '"ChatGPT官网2026年05月最新指南：官方入口、注册使用教程与国内可行方案"', link: '/chatgpt/chatgpt-guanwang-2026-05' },
-            { text: '"ChatGPT官网最新使用指南（2026年05月）：官网入口、注册登录、国内访问、常见问题全解"', link: '/chatgpt/chatgpt-guanwang-2026-05-zuixin-zhinan' },
-            { text: '"ChatGPT官网官方网址入口（官网网址登录入口）2026年04月最新指南"', link: '/chatgpt/chatgpt-guanwang-2026-04-zuixin-zhinan' },
-            { text: '"ChatGPT官网2026年04月最新指南：官网入口、注册登录、国内使用与替代方案全解析"', link: '/chatgpt/chatgpt-guanwang-april-2026' },
-            { text: 'ChatGPT官网入口在哪？2026年4月国内打开ChatGPT的3种方法', link: '/chatgpt/chatgpt-guanwang-rukou-guonei-fangfa-april-2026-429' },
-            { text: 'ChatGPT官网完全指南：2026年4月国内访问+中文版镜像推荐（支持GPT-5.4无需翻墙）', link: '/chatgpt/chatgpt-guanwang-zhongwen-ban-gpt5-guonei-jiaocheng-april-2026' },
-            { text: '专栏导读', link: '/chatgpt/' },
-            { text: 'ChatGPT官网中文版：GPT-5.4国内使用完全攻略【2026年4月最新】', link: '/chatgpt/chatgpt-gpt5-guonei-wanzheng-gonglue-2026' },
-            { text: 'ChatGPT官方网址入口（官网登录入口）｜国内免翻墙使用完整方案【2026年4月最新】', link: '/chatgpt/chatgpt-guanfang-wangzhi-rukou-denglu-mianfanqiang-2026' },
-            { text: 'ChatGPT官方网址入口（官网登录入口）2026年4月最新', link: '/chatgpt/chatgpt-guanfang-wangzhi-rukou-guanwang-denglu-2026' },
-            { text: 'OpenAI��AWS�Ž⣺Bedrock Managed Agents�ı�AI���ֱ�֣�', link: '/chatgpt/openai-aws-bedrock-managed-agents-2026' },
-            { text: 'AI编码代理在9秒内删了生产库——PocketOS惨案拆解', link: '/chatgpt/ai-coding-agent-deletes-production-database-2026' },
-            { text: 'Google豪掷400亿美元投资Anthropic：AI行业最重要的转折点', link: '/chatgpt/google-invest-anthropic-40b-analysis-2026' },
-            { text: 'AI编程助手2026年横向评测：Cursor、Windsurf、Copilot、Claude Code到底谁更强？', link: '/chatgpt/ai-coding-agent-comparison-2026' },
-            { text: 'Claude 4.6 国内使用指南：支持 Claude-4.6-opus，免费体验使用【4月最新更新】', link: '/chatgpt/claude-4-6-opus-china-guide-april-2026' },
-            { text: 'Anthropic Claude官网中文版：国内最全Claude opus使用指南【4月最新更新】', link: '/chatgpt/claude-opus-official-china-guide-april-2026' },
-            { text: 'Anthropic Claude官网中文版：国内最全Claude opus使用指南【4月最新更新】', link: '/chatgpt/claude-guide-2026-04' },
-            { text: 'GPT-5.5重磅发布：这不是一次普通升级，OpenAI在重新定义"AI助手"', link: '/chatgpt/gpt5-5-deep-analysis-april-2026' },
-            { text: '多模态AI模型的技术原理与未来发展：从GPT-4V到真正的世界模型', link: '/chatgpt/multimodal-ai-technical-principles-future-development-2026' },
-            { text: 'AI设计工具的新篇章：从Claude Design看AI如何重塑创意工作流', link: '/chatgpt/ai-design-tools-claude-design-analysis-2026' },
-            { text: 'Claude Opus 4.7深度解析：AI协作范式的重要转变', link: '/chatgpt/claude-opus-4-7-depth-analysis-2026' },
-            { text: '别光盯着GPT和Claude了，马斯克的"虚拟员工"要来了', link: '/chatgpt/grok-computer-virtual-assistant-2026' },
-            { text: '别光看参数了，聊聊 Claude Opus 4.7 到底能给普通人带来什么', link: '/chatgpt/claude-opus-4.7-kepu-2026' },
-            { text: 'DeepSeek V3.2 重磅发布：国产开源大模型再进化', link: '/chatgpt/deepseek-v3.2-jieshao-2026' },
-            { text: '我是怎么把 ChatGPT 用顺手的：一篇讲透提示词怎么写的个人博客', link: '/chatgpt/chatgpt_prompt_blog' },
-            { text: '2026年用AI做副业的现实打法：7条能落地的变现路线，适合普通人慢慢做起来', link: '/chatgpt/ai-side-hustle-guide-2026' },
-            { text: '为什么我更看好 GPT-5.4：它不只是会写代码，更像一个真正的 AI 工程搭子', link: '/chatgpt/gpt54_vs_claudecode_vs_deepseek_summary' },
-            { text: 'ChatGPT中文版怎么用？2026年4月国内免翻墙终极指南（GPT-5.4+多模型对比）', link: '/chatgpt/chatgpt-zhongwen-ban-2026-zhinan-mianfei-guonei-shiyong' },
-            { text: 'ChatGPT国内能用吗？2026年4月亲测5种方法（附最稳定方案推荐）', link: '/chatgpt/chatgpt-guonei-neng-yong-ma-5zhong-fangfa-2026' },
-            { text: '别只学提示词了：一篇讲透 AI 办公的实战博客', link: '/chatgpt/ai_office_practical_blog' },
-            { text: 'DeepSeek怎么用？DeepSeek V3国内免费使用教程与ChatGPT对比（2026年4月）', link: '/chatgpt/deepseek-v3-guonei-mianfei-jiaocheng-vs-chatgpt-2026' },
-            { text: 'AI提示词大全2026：80个ChatGPT/Claude万能Prompt模板（工作学习全场景覆盖）', link: '/chatgpt/ai-tishici-daquan-chatgpt-claude-prompt-moban-2026' },
-            { text: 'Claude 4.6国内怎么用？2026年4月免翻墙使用Claude全教程（附中文Prompt技巧）', link: '/chatgpt/claude-4-6-guonei-mianfanqiang-shiyong-jiaocheng-2026' },
-            { text: 'ChatGPT怎么赚钱？2026年10个AI副业变现方法（月入3000-30000实操指南）', link: '/chatgpt/chatgpt-fuye-zhuanqian-ai-bianxian-zhinan-2026' },
-            { text: 'ChatGPT国内怎么注册？2026最新注册使用全流程教程', link: '/chatgpt/chatgpt-guonei-zhuce-jiaocheng-mianfanqiang-april-2026' },
-            { text: 'ChatGPT写论文靠谱吗？AI辅助论文写作完整指南', link: '/chatgpt/chatgpt-xie-lunwen-ai-fuzhuxiezuo-zhinan-april-2026' },
-            { text: '2026年AI大模型排行榜：GPT-5.4/Claude/Gemini/Grok横评', link: '/chatgpt/ai-damoxing-paihangbang-gpt-claude-gemini-grok-duibi-april-2026' },
-            { text: 'Gemini 3.1 Pro中文版国内免翻墙使用教程（2026年4月）', link: '/chatgpt/gemini-3-1-pro-zhongwen-ban-guonei-jiaocheng-april-2026' },
-            { text: 'Grok中文版怎么用？国内免翻墙使用Grok 4.2完整教程', link: '/chatgpt/grok-zhongwen-ban-guonei-shiyong-zhinan-april-2026' },
-            { text: 'ChatGPT官网入口（2026年4月最新）｜国内ChatGPT中文版使用指南', link: '/chatgpt/chatgpt-guanwang-rukou-zhongwen-ban-zhinan-april-2026' },
-            { text: 'ChatGPT中文版访问指南（2026年4月更新）｜国内免翻墙使用GPT-5.4完整教程', link: '/chatgpt/chatgpt-zhongwen-ban-zhinan-guonei-mianfei-shiyong-2026' },
-            { text: 'GPT-5.4怎么用？国内免翻墙使用GPT-5.4 Thinking完整教程（2026年4月）', link: '/chatgpt/gpt5-4-how-to-use-thinking-guide-april-2026' },
-            { text: 'ChatGPT中文版和官网有什么区别？2026年4月全面对比', link: '/chatgpt/chatgpt-chinese-vs-official-comparison-april-2026' },
-            { text: 'ChatGPT官网打不开怎么办？国内访问解决方案大全（2026年4月）', link: '/chatgpt/chatgpt-official-site-access-solutions-april-2026' },
-            { text: 'ChatGPT镜像网站哪个好用？2026年4月实测排名推荐', link: '/chatgpt/chatgpt-mirror-sites-ranking-april-2026' },
-            { text: 'ChatGPT下载安装教程：电脑+手机全平台安装方法（2026年4月）', link: '/chatgpt/chatgpt-download-install-guide-april-2026' },
-            { text: 'ChatGPT免费版和付费版区别大吗？GPT-5.4免费vs Plus深度对比', link: '/chatgpt/chatgpt-free-vs-paid-gpt54-comparison-april-2026' },
-            { text: 'ChatGPT官网入口大全与GPT-5.4深度实测：2026年4月国内免翻墙使用完整方案', link: '/chatgpt/chatgpt-official-entry-gpt5-4-deep-test-april-2026' },
-            { text: 'ChatGPT中文版官网入口｜GPT-5.4国内免翻墙使用完整教程（2026年3月最新）', link: '/chatgpt/chatgpt-chinese-version-gpt5-no-vpn-complete-guide-2026' },
-            { text: 'ChatGPT 中文版怎么用？GPT-5.4 Thinking 国内无需翻墙使用全攻略（2026年3月更新）', link: '/chatgpt/chatgpt-chinese-gpt5.4-thinking-guide-2026' },
-            { text: 'ChatGPT官网入口：国内新手保姆级别使用指南', link: '/chatgpt/chatgpt-guanwang-newbie-bindao-guide' },
-            { text: 'ChatGPT注册使用全攻略（2026年3月更新）｜官网入口、国内免翻墙方案一文搞定', link: '/chatgpt/chatgpt-registration-and-usage-complete-tutorial-2026' },
-            { text: 'ChatGPT中文版：国内访问指南（支持GPT、Gemini、Claude、grok等模型，无需翻墙）', link: '/chatgpt/chatgpt-chinese-access-guide-multi-model-2026' },
-            
-            // --- 2026/GPT-5 相关 ---
-            { text: '2026最新国内可用ChatGPT镜像网站合集', link: '/chatgpt/chatgpt-mirrors-ultimate-guide-2026' },
-            { text: 'ChatGPT 5.2 (2026版)', link: '/chatgpt/chatgpt-5.2-2026' },
-            { text: 'ChatGPT 2026 最新版', link: '/chatgpt/chatgpt-2026' },
-            { text: '2026 使用教程', link: '/chatgpt/chatgpt-guide-2026' },
-            { text: 'GPT-5 中文使用指南 (12月)', link: '/chatgpt/chatgpt-cn-gpt5-usage-guide-dec' },
-            { text: 'GPT-5 指南', link: '/chatgpt/gpt5-chatgpt-guide' },
-            { text: 'GPT-5 新闻资讯', link: '/chatgpt/gpt5-news' },
-            { text: '如何使用 GPT-5.2', link: '/chatgpt/how-to-use-gpt5.2' },
-            { text: 'GPT-5.4 国内使用指南（2026最新）', link: '/chatgpt/gpt5.4-china-guide-2026' },
-
-            // --- 官方与官网指南 ---
+            { text: 'ChatGPT官网 2026年05月最新指南', link: '/chatgpt/chatgpt-guanwang-2026-05-zuixin-zhinan' },
+            { text: 'ChatGPT官网中文版：2026年05月最新入口与使用方法', link: '/chatgpt/chatgpt-guanwang-zhongwenban-2026-05' },
+            { text: 'ChatGPT官网是什么？2026最新官网入口与登录方法', link: '/chatgpt/chatgpt-guanwang-shi-shenme-2026' },
+            { text: 'ChatGPT官方网址入口（官网登录入口）国内免翻墙完整方案', link: '/chatgpt/chatgpt-guanfang-wangzhi-rukou-denglu-mianfanqiang-2026' },
+            { text: 'ChatGPT官网入口大全（GPT-5.4国内使用完全攻略）', link: '/chatgpt/chatgpt-gpt5-guonei-wanzheng-gonglue-2026' },
             { text: 'ChatGPT 官方详解', link: '/chatgpt/chatgpt-official' },
-            { text: 'ChatGPT 官方 2025', link: '/chatgpt/chatgpt-official-2025' },
-            { text: 'ChatGPT 官方入口', link: '/chatgpt/chatgpt-official-entry' },
-            { text: 'ChatGPT 官方指南', link: '/chatgpt/chatgpt-official-guide' },
-            { text: 'ChatGPT 官网中文指南', link: '/chatgpt/chatgpt-official-site-chinese-guide' },
-            { text: 'ChatGPT 官方网站', link: '/chatgpt/chatgpt-official-website' },
-            { text: 'ChatGPT 中文版官网入口（2026年3月最新）国内使用指南', link: '/chatgpt/chatgpt-chinese-official-website-entry-and-usage-guide-2026' },
-
-            // --- 中文版与国内使用 ---
-            { text: 'ChatGPT 国内使用指南', link: '/chatgpt/chatgpt-china-guide' },
-            { text: 'ChatGPT 中国版', link: '/chatgpt/chatgpt-china-version' },
-            { text: 'ChatGPT 中文版', link: '/chatgpt/chatgpt-chinese-version' },
-            { text: 'ChatGPT 中文指南', link: '/chatgpt/chatgpt-chinese-guide' },
-            { text: 'ChatGPT 国内如何使用', link: '/chatgpt/how-to-use-gpt' },
-            { text: 'ChatGPT 中文官方', link: '/chatgpt/chatgpt-chinese-official' },
-            { text: 'ChatGPT 中文终极指南', link: '/chatgpt/chatgpt-cn-ultimate-guide' },
-            { text: 'ChatGPT 中文访问推荐', link: '/chatgpt/chatgpt-chinese-access-recommendations' }, // 注意：请检查文件名是否带s
-            { text: '国内可用站点', link: '/chatgpt/china-available-sites' },
-            
-
-            // --- 教程与资源 ---
+            { text: 'ChatGPT官网打不开怎么办？国内访问解决方案大全', link: '/chatgpt/chatgpt-official-site-access-solutions-april-2026' },
+          ]
+        },
+        {
+          text: '📝 注册教程',
+          collapsed: false,
+          items: [
+            { text: 'ChatGPT怎么注册？2026年5月最新保姆级教程', link: '/chatgpt/chatgpt-how-to-register-2026-05' },
+            { text: 'ChatGPT账号注册2026年05月最新完整指南', link: '/chatgpt/chatgpt-account-registration-2026-05-505' },
+            { text: 'ChatGPT国内怎么注册？2026最新注册使用全流程', link: '/chatgpt/chatgpt-guonei-zhuce-jiaocheng-mianfanqiang-april-2026' },
+            { text: 'ChatGPT注册使用全攻略（含官网入口与免翻墙方案）', link: '/chatgpt/chatgpt-registration-and-usage-complete-tutorial-2026' },
+          ]
+        },
+        {
+          text: '🇨🇳 国内使用 & 中文版',
+          collapsed: false,
+          items: [
+            { text: 'ChatGPT国内使用完整指南（2026年5月最新）', link: '/chatgpt/chatgpt-guonei-shiyong-complete-guide-2026-05' },
+            { text: 'ChatGPT国内能用吗？2026年4月亲测5种方法', link: '/chatgpt/chatgpt-guonei-neng-yong-ma-5zhong-fangfa-2026' },
+            { text: 'ChatGPT中文版怎么用？2026年4月国内免翻墙终极指南', link: '/chatgpt/chatgpt-zhongwen-ban-2026-zhinan-mianfei-guonei-shiyong' },
+            { text: 'ChatGPT中文版 国内访问指南', link: '/chatgpt/chatgpt-chinese-version' },
+            { text: 'ChatGPT中文指南', link: '/chatgpt/chatgpt-chinese-guide' },
+            { text: 'ChatGPT中文版官网入口｜GPT-5.4国内免翻墙完整教程', link: '/chatgpt/chatgpt-chinese-version-gpt5-no-vpn-complete-guide-2026' },
+            { text: 'ChatGPT中文版怎么用？GPT-5.4 Thinking 国内全攻略', link: '/chatgpt/chatgpt-chinese-gpt5.4-thinking-guide-2026' },
+            { text: 'ChatGPT中文版和官网有什么区别？2026年4月全面对比', link: '/chatgpt/chatgpt-chinese-vs-official-comparison-april-2026' },
+            { text: 'ChatGPT镜像网站哪个好用？2026年4月实测排名', link: '/chatgpt/chatgpt-mirror-sites-ranking-april-2026' },
+          ]
+        },
+        {
+          text: '🖥️ 使用教程',
+          collapsed: false,
+          items: [
             { text: '如何使用 ChatGPT', link: '/chatgpt/how-to-use-chatgpt' },
             { text: 'ChatGPT 使用指南', link: '/chatgpt/chatgpt-guide' },
             { text: '新手入门指南', link: '/chatgpt/chatgpt-guide-for-beginners' },
-            { text: 'ChatGPT 免费指南', link: '/chatgpt/chatgpt-free-guide' },
-            { text: '2025 免费中文版', link: '/chatgpt/chatgpt-chinese-free-2025' },
-            { text: '镜像站合集', link: '/chatgpt/chatgpt-mirror-sites-collection' },
-            { text: '镜像列表', link: '/chatgpt/mirrors' },
-            { text: '常见问题解决方案', link: '/chatgpt/chatgpt-faq-solutions' },
             { text: 'ChatGPT 网页版使用指南（2026）', link: '/chatgpt/chatgpt-web-version-guide-2026' },
-            { text: 'ChatGPT怎么用？国内使用完整教程（2026最新）', link: '/chatgpt/chatgpt-how-to-use-guide-2026' },
-            
-            // --- 其他 ---
+            { text: 'ChatGPT 免费指南', link: '/chatgpt/chatgpt-free-guide' },
+            { text: 'ChatGPT 下载安装教程（电脑+手机全平台）', link: '/chatgpt/chatgpt-download-install-guide-april-2026' },
+            { text: '常见问题解决方案', link: '/chatgpt/chatgpt-faq-solutions' },
             { text: '什么是 ChatGPT', link: '/chatgpt/what-is-chatgpt' },
-            { text: 'ChatGPT 中文 GPT', link: '/chatgpt/chatgpt-chinese-gpt' },
+            { text: 'ChatGPT 2026 最新版', link: '/chatgpt/chatgpt-2026' },
+            { text: 'ChatGPT 5.2（2026版）', link: '/chatgpt/chatgpt-5.2-2026' },
+          ]
+        },
+        {
+          text: '🤖 GPT-5 系列模型',
+          collapsed: false,
+          items: [
+            { text: 'GPT-5.4 国内使用指南（2026最新）', link: '/chatgpt/gpt5.4-china-guide-2026' },
+            { text: 'GPT-5.4怎么用？GPT-5.4 Thinking 完整教程', link: '/chatgpt/gpt5-4-how-to-use-thinking-guide-april-2026' },
+            { text: 'GPT-5.5 重磅发布：OpenAI 在重新定义"AI助手"', link: '/chatgpt/gpt5-5-deep-analysis-april-2026' },
+            { text: 'GPT-5 中文使用指南', link: '/chatgpt/gpt5-chatgpt-guide' },
+            { text: 'GPT-5 新闻资讯', link: '/chatgpt/gpt5-news' },
+            { text: 'ChatGPT 免费版 vs Plus（GPT-5.4 深度对比）', link: '/chatgpt/chatgpt-free-vs-paid-gpt54-comparison-april-2026' },
+            { text: '为什么我更看好 GPT-5.4：一个真正的 AI 工程搭子', link: '/chatgpt/gpt54_vs_claudecode_vs_deepseek_summary' },
+          ]
+        },
+        {
+          text: '🆚 模型对比 & 横评',
+          collapsed: false,
+          items: [
+            { text: '2026年AI大模型排行榜：GPT-5.4/Claude/Gemini/Grok 横评', link: '/chatgpt/ai-damoxing-paihangbang-gpt-claude-gemini-grok-duibi-april-2026' },
             { text: 'ChatGPT vs Claude 对比', link: '/chatgpt/chatgpt-vs-claude' },
+            { text: 'AI编程助手 2026 横评：Cursor / Windsurf / Copilot / Claude Code', link: '/chatgpt/ai-coding-agent-comparison-2026' },
+            { text: '多模态AI技术原理与未来发展', link: '/chatgpt/multimodal-ai-technical-principles-future-development-2026' },
+          ]
+        },
+        {
+          text: '🧠 Claude / Gemini / Grok / DeepSeek',
+          collapsed: false,
+          items: [
+            { text: 'Claude 4.6 国内使用指南（免费体验）', link: '/chatgpt/claude-4-6-opus-china-guide-april-2026' },
+            { text: 'Claude 4.6 国内怎么用？免翻墙完整教程', link: '/chatgpt/claude-4-6-guonei-mianfanqiang-shiyong-jiaocheng-2026' },
+            { text: 'Claude Opus 4.7 深度解析', link: '/chatgpt/claude-opus-4-7-depth-analysis-2026' },
+            { text: 'Gemini 3.1 Pro 中文版国内免翻墙教程', link: '/chatgpt/gemini-3-1-pro-zhongwen-ban-guonei-jiaocheng-april-2026' },
+            { text: 'Grok 中文版怎么用？Grok 4.2 完整教程', link: '/chatgpt/grok-zhongwen-ban-guonei-shiyong-zhinan-april-2026' },
+            { text: 'Grok 虚拟员工：马斯克的下一步', link: '/chatgpt/grok-computer-virtual-assistant-2026' },
+            { text: 'DeepSeek V3 国内免费使用教程 vs ChatGPT', link: '/chatgpt/deepseek-v3-guonei-mianfei-jiaocheng-vs-chatgpt-2026' },
+            { text: 'DeepSeek V3.2 重磅发布', link: '/chatgpt/deepseek-v3.2-jieshao-2026' },
+          ]
+        },
+        {
+          text: '💡 提示词 & 应用',
+          collapsed: false,
+          items: [
+            { text: 'AI 提示词大全 2026：80个万能 Prompt 模板', link: '/chatgpt/ai-tishici-daquan-chatgpt-claude-prompt-moban-2026' },
+            { text: '一篇讲透提示词怎么写', link: '/chatgpt/chatgpt_prompt_blog' },
+            { text: 'AI 办公实战博客', link: '/chatgpt/ai_office_practical_blog' },
+            { text: 'ChatGPT 写论文靠谱吗？AI 辅助写作完整指南', link: '/chatgpt/chatgpt-xie-lunwen-ai-fuzhuxiezuo-zhinan-april-2026' },
+            { text: 'ChatGPT 怎么赚钱？10个AI副业变现方法', link: '/chatgpt/chatgpt-fuye-zhuanqian-ai-bianxian-zhinan-2026' },
+            { text: '2026年用AI做副业的现实打法', link: '/chatgpt/ai-side-hustle-guide-2026' },
+            { text: 'AI 设计工具：Claude Design 与创意工作流', link: '/chatgpt/ai-design-tools-claude-design-analysis-2026' },
+          ]
+        },
+        {
+          text: '📰 行业资讯',
+          collapsed: false,
+          items: [
+            { text: 'Google 豪掷 400 亿美元投资 Anthropic', link: '/chatgpt/google-invest-anthropic-40b-analysis-2026' },
+            { text: 'AI 编码代理 9 秒删生产库——PocketOS 惨案', link: '/chatgpt/ai-coding-agent-deletes-production-database-2026' },
+            { text: 'OpenAI 牵手 AWS：Bedrock Managed Agents', link: '/chatgpt/openai-aws-bedrock-managed-agents-2026' },
           ]
         }
       ],

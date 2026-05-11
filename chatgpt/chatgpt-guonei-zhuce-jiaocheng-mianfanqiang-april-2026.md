@@ -202,7 +202,7 @@ GPTCat的界面和ChatGPT官网高度一致，如果你之前用过ChatGPT，上
 
 ## 延伸阅读
 
-- [ChatGPT官网入口与中文版使用指南](/chatgpt/chatgpt-guanwang-rukou-zhongwen-ban-zhinan-april-2026)
+- [ChatGPT官网入口与中文版使用指南](/chatgpt/chatgpt-guanwang-2026-05-zuixin-zhinan)
 - [ChatGPT写论文完整指南](/chatgpt/chatgpt-xie-lunwen-ai-fuzhuxiezuo-zhinan-april-2026)
 - [AI大模型排行榜：四大旗舰模型对比](/chatgpt/ai-damoxing-paihangbang-gpt-claude-gemini-grok-duibi-april-2026)
 - [ChatGPT镜像网站实测排名](/chatgpt/chatgpt-mirror-sites-ranking-april-2026)

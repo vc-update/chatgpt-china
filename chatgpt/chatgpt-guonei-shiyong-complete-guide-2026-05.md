@@ -316,8 +316,8 @@ GPT-5.4 相比 GPT-5 在推理速度上提升 ~30%、幻觉率降低 ~40%、多�
 
 - [GPT-5.4国内使用指南（2026最新）：无需翻墙，一键直连最强AI](/chatgpt/gpt5.4-china-guide-2026)
 - [国内如何使用 ChatGPT：2026年新手保姆级教程 | ChatGPT中文版](/chatgpt/how-to-use-chatgpt)
-- [2026年国内ChatGPT镜像网站避坑与推荐列表](/chatgpt/mirrors)
-- [ChatGPT 国内怎么使用？（官网 + 镜像完整方案）](/chatgpt/how-to-use-gpt)
+- [2026年国内ChatGPT镜像网站避坑与推荐列表](/chatgpt/chatgpt-mirror-sites-ranking-april-2026)
+- [ChatGPT 国内怎么使用？（官网 + 镜像完整方案）](/chatgpt/how-to-use-chatgpt)
 
 **延伸资源**：
 

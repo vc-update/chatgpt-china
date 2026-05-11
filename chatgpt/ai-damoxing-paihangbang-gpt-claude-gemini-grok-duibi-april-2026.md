@@ -162,7 +162,7 @@ date: 2026-04-12
 
 ## 延伸阅读
 
-- [ChatGPT官网入口与使用指南](/chatgpt/chatgpt-guanwang-rukou-zhongwen-ban-zhinan-april-2026)
+- [ChatGPT官网入口与使用指南](/chatgpt/chatgpt-guanwang-2026-05-zuixin-zhinan)
 - [Grok中文版使用教程](/chatgpt/grok-zhongwen-ban-guonei-shiyong-zhinan-april-2026)
 - [Gemini 3.1 Pro使用指南](/chatgpt/gemini-3-1-pro-zhongwen-ban-guonei-jiaocheng-april-2026)
 - [ChatGPT中文版完整教程](https://www.chatgpt-chinese.chat)

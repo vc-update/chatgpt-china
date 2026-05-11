@@ -727,8 +727,8 @@ API 账号不是给普通聊天用户准备的，而是给开发者用来接入�
 ### 站内推荐
 
 - [国内如何使用 ChatGPT：2026年新手保姆级教程 | ChatGPT中文版](/chatgpt/how-to-use-chatgpt)
-- [ChatGPT 国内怎么使用？（官网 + 镜像完整方案）](/chatgpt/how-to-use-gpt)
-- [2026年国内ChatGPT镜像网站避坑与推荐列表](/chatgpt/mirrors)
+- [ChatGPT 国内怎么使用？（官网 + 镜像完整方案）](/chatgpt/how-to-use-chatgpt)
+- [2026年国内ChatGPT镜像网站避坑与推荐列表](/chatgpt/chatgpt-mirror-sites-ranking-april-2026)
 
 ### 站外参考
 

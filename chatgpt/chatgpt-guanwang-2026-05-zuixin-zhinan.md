@@ -1033,7 +1033,7 @@ outline: deep
 
 ### 站内推荐
 - [ChatGPT中文版使用指南](/chatgpt/chatgpt-zhongwen-ban-2026-zhinan-mianfei-guonei-shiyong)
-- [ChatGPT官网入口2026](/chatgpt/chatgpt-guanwang-rukou-zhongwen-ban-zhinan-april-2026)
+- [ChatGPT官网入口2026](/chatgpt/chatgpt-guanwang-2026-05-zuixin-zhinan)
 - [ChatGPT镜像网站推荐](/chatgpt/chatgpt-mirror-sites-ranking-april-2026)
 
 ### 关联阅读

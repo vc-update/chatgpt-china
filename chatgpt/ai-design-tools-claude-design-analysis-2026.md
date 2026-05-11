@@ -1,3 +1,13 @@
+---
+title: AI设计工具的新篇章：从Claude Design看AI如何重塑创意工作流
+description: 深度分析Anthropic发布的Claude Design设计工具，基于Opus 4.7模型如何从图像生成升级到完整设计原型创作，AI设计工具全面对比与未来展望。
+date: 2026-04-28
+head:
+  - - meta
+    - name: keywords
+      content: Claude Design,AI设计工具,Anthropic,Opus 4.7,AI创意工具,Midjourney替代,AI设计
+---
+
 # AI设计工具的新篇章：从Claude Design看AI如何重塑创意工作流
 
 昨天，Anthropic发布了Claude Design，一个基于他们最新模型Opus 4.7的设计产品。这不仅仅是又一个AI工具的上线，而是标志着AI正在从内容生成向专业设计领域深度渗透。如果你还在用Midjourney画图、用ChatGPT写文案，那么你可能需要重新思考AI在创意工作流中的位置了。

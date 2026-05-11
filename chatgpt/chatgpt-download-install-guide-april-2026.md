@@ -172,8 +172,8 @@ iPad用户推荐直接用Safari打开 [gptcat.cc](https://gptcat.cc)，大屏体
 
 ## 相关阅读
 
-- [ChatGPT中文版官网入口与GPT-5.4深度实测](./chatgpt-official-entry-gpt5-4-deep-test-april-2026)
+- [ChatGPT中文版官网入口与GPT-5.4深度实测](./chatgpt-guanwang-2026-05-zuixin-zhinan)
 - [ChatGPT免费版和付费版区别大吗？深度对比](./chatgpt-free-vs-paid-gpt54-comparison-april-2026)
-- [ChatGPT怎么用？国内使用完整教程](./chatgpt-how-to-use-guide-2026)
+- [ChatGPT怎么用？国内使用完整教程](./how-to-use-chatgpt)
 - [ChatGPT中文版哪个好用？实测排名](https://www.chatgpt-chinese-guide.com/chatgpt/chatgpt-zhongwen-ban-nage-haoyong-5da-pingtai-shice-paiming-2026)
 - [Grok 4.2使用指南](https://www.grok-china.com/tutorial/grok-4-2-april-2026-full-capability-guide)

@@ -1,3 +1,13 @@
+---
+title: AI办公实战指南：别只学提示词，一篇讲透AI如何真正提升工作效率
+description: 超越提示词模板的AI办公实战教程，解决AI回答太泛、生成内容不能直接用、复杂任务跑偏等痛点，用ChatGPT和Claude真正提升办公效率。
+date: 2026-04-28
+head:
+  - - meta
+    - name: keywords
+      content: AI办公,ChatGPT办公,AI提效,AI工作,ChatGPT实战,AI办公工具,提示词
+---
+
 # 别只学提示词了：一篇讲透 AI 办公的实战博客
 
 很多人学 AI 办公，第一步就是学提示词。

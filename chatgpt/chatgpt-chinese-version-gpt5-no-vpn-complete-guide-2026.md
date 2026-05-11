@@ -273,7 +273,7 @@ GPT-5.4对结构化输入的理解能力极强。把你的需求分条列出，�
 
 四个模型各有所长，交叉使用才能拿到最好的结果。
 
-> 更多进阶技巧请参考 [ChatGPT中文版完全指南](/guide/chatgpt-chinese) 和 [中文版使用教程](/chatgpt/chatgpt-how-to-use-guide-2026)。
+> 更多进阶技巧请参考 [ChatGPT中文版完全指南](/guide/chatgpt-chinese) 和 [中文版使用教程](/chatgpt/how-to-use-chatgpt)。
 
 ---
 

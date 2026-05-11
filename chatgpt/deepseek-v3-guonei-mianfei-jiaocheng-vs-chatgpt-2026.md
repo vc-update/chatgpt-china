@@ -251,10 +251,10 @@ DeepSeek V3是通用对话模型，DeepSeek-R1是专门优化推理能力的模�
 
 ### 📌 相关推荐
 
-- [ChatGPT中文版访问指南2026：国内免翻墙使用GPT-5.4完整教程](/chatgpt/chatgpt-zhongwen-ban-zhinan-guonei-mianfei-shiyong-2026)
+- [ChatGPT中文版访问指南2026：国内免翻墙使用GPT-5.4完整教程](/chatgpt/chatgpt-zhongwen-ban-2026-zhinan-mianfei-guonei-shiyong)
 - [2026年AI大模型排行榜：GPT-5.4/Claude/Gemini/Grok横评](/chatgpt/ai-damoxing-paihangbang-gpt-claude-gemini-grok-duibi-april-2026)
 - [Grok中文版怎么用？国内免翻墙使用Grok 4.2完整教程](/chatgpt/grok-zhongwen-ban-guonei-shiyong-zhinan-april-2026)
-- [ChatGPT官网入口2026：国内ChatGPT中文版使用指南](/chatgpt/chatgpt-guanwang-rukou-zhongwen-ban-zhinan-april-2026)
+- [ChatGPT官网入口2026：国内ChatGPT中文版使用指南](/chatgpt/chatgpt-guanwang-2026-05-zuixin-zhinan)
 
 > 💬 更多AI工具教程，请访问 [chatgpt-chinese.chat](https://www.chatgpt-chinese.chat)、[grok-china.com](https://www.grok-china.com) 和 [chatgpt-chinese-guide.com](https://www.chatgpt-chinese-guide.com)
 

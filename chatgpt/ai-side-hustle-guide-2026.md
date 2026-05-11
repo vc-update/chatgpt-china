@@ -1,3 +1,13 @@
+---
+title: 2026年用AI做副业的现实打法：7条能落地的变现路线
+description: 2026年最实用的AI副业指南，7条适合普通人的变现路线，从AI写作、AI设计到AI编程接单，用ChatGPT和Claude提效赚钱的真实方法。
+date: 2026-04-28
+head:
+  - - meta
+    - name: keywords
+      content: AI副业,AI赚钱,ChatGPT副业,AI变现,AI兼职,用AI做副业,2026副业
+---
+
 # 2026年用AI做副业的现实打法：7条能落地的变现路线，适合普通人慢慢做起来
 
 “现在做AI副业，到底还有没有机会？”

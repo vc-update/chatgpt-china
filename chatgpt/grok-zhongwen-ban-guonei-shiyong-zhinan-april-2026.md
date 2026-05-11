@@ -165,7 +165,7 @@ Grok 4.2作为xAI的最新力作，在实时信息、图像生成和推理能力
 
 ## 延伸阅读
 
-- [ChatGPT官网入口与中文版使用指南](/chatgpt/chatgpt-guanwang-rukou-zhongwen-ban-zhinan-april-2026)
+- [ChatGPT官网入口与中文版使用指南](/chatgpt/chatgpt-guanwang-2026-05-zuixin-zhinan)
 - [GPT-5.4国内使用指南](/chatgpt/gpt5.4-china-guide-2026)
 - [ChatGPT镜像网站实测排名](/chatgpt/chatgpt-mirror-sites-ranking-april-2026)
 - [更多Grok使用指南](https://www.grok-china.com)

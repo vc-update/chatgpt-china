@@ -41,7 +41,7 @@ date: 2026-04-12
 
 > 📌 **重要提示**：以上所有官方入口在国内均无法稳定访问。如果你不想折腾网络工具，建议直接看下面的 [国内使用方案](#三、国内免翻墙使用-chatgpt-的两大方案)。
 
-想了解更多官网入口信息？看这篇 👉 [ChatGPT 官方入口大全](/chatgpt/chatgpt-official-entry)
+想了解更多官网入口信息？看这篇 👉 [ChatGPT 官方入口大全](/chatgpt/chatgpt-official)
 
 ---
 
@@ -345,8 +345,8 @@ GPT-5.4 Thinking 固然强大，但 2026 年的 AI 赛道选手众多。简单�
 
 > **更多推荐阅读：**
 > - [ChatGPT 注册使用全攻略（2026年3月更新）](/chatgpt/chatgpt-registration-and-usage-complete-tutorial-2026)
-> - [ChatGPT 中文版访问指南（支持多模型）](/chatgpt/chatgpt-chinese-access-guide-multi-model-2026)
-> - [2026 最新国内可用 ChatGPT 镜像网站合集](/chatgpt/chatgpt-mirrors-ultimate-guide-2026)
+> - [ChatGPT 中文版访问指南（支持多模型）](/chatgpt/chatgpt-chinese-version)
+> - [2026 最新国内可用 ChatGPT 镜像网站合集](/chatgpt/chatgpt-mirror-sites-ranking-april-2026)
 > - [ChatGPT 国内怎么用？官网入口、中文版教程一次讲清](/guide/chatgpt-china-how-to-use-2026)
 > - [ChatGPT 中文版使用指南](https://www.chatgpt-chinese.chat/)
 > - [ChatGPT 中文指南站](https://www.chatgpt-chinese-guide.com/)

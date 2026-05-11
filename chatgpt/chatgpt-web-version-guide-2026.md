@@ -200,5 +200,5 @@ SnakeGPT 和 GPTCat 均支持国内邮箱注册，不需要海外手机号。
 
 更多 ChatGPT 国内使用技巧，可以参考：
 - [ChatGPT 国内使用完全指南](/guide/chatgpt-use-in-china-guide-2026)
-- [2026年国内可用 ChatGPT 镜像站合集](/chatgpt/chatgpt-mirrors-ultimate-guide-2026)
+- [2026年国内可用 ChatGPT 镜像站合集](/chatgpt/chatgpt-mirror-sites-ranking-april-2026)
 - [ChatGPT 新手入门完整指南](/chatgpt/chatgpt-guide-for-beginners)

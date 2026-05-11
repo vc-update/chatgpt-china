@@ -169,7 +169,7 @@ Gemini 3.1 Pro是Google目前最强的AI模型，尤其在超长上下文和多�
 
 ## 延伸阅读
 
-- [ChatGPT官网入口与中文版使用指南](/chatgpt/chatgpt-guanwang-rukou-zhongwen-ban-zhinan-april-2026)
+- [ChatGPT官网入口与中文版使用指南](/chatgpt/chatgpt-guanwang-2026-05-zuixin-zhinan)
 - [Grok中文版国内使用指南](/chatgpt/grok-zhongwen-ban-guonei-shiyong-zhinan-april-2026)
 - [GPT-5.4 vs Gemini 3.1 Pro深度对比](/guide/chatgpt5.4-VS-gemini3.1pro)
 - [更多Gemini使用指南](https://www.chatgpt-chinese-guide.com)
